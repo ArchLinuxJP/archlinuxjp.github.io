@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="ja-jp">
+<head>
+    <title>archlinuxjp &middot; archlinuxjp</title>
+    <meta name="generator" content="Hugo 0.14" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="syui">
+    
+    
+      <link href="https://archlinuxjp.github.io/index.xml" rel="alternate" type="application/rss+xml" title="archlinuxjp" />
+      <link href="https://archlinuxjp.github.io/index.xml" rel="feed" type="application/rss+xml" title="archlinuxjp" />
+    
+    <link rel="icon" href="https://archlinuxjp.github.io/favicon.ico">
+    <link rel="apple-touch-icon" href="https://archlinuxjp.github.io/apple-touch-icon.png" />
+    <link rel="stylesheet" href="https://archlinuxjp.github.io/css/style.css">
+    <link rel="stylesheet" href="https://archlinuxjp.github.io/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://archlinuxjp.github.io/css/monokai.css">
+    <link rel="stylesheet" href="https://archlinuxjp.github.io/fancybox/jquery.fancybox.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
+    <meta property="og:title" content="archlinuxjp" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://archlinuxjp.github.io/" />
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+<meta itemprop="name" content="archlinuxjp">
+<meta itemprop="description" content="">
+
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://archlinuxjp.github.io/fancybox/jquery.fancybox.pack.js"></script>
+    <script src="https://archlinuxjp.github.io/js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+    
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']]}
+      });
+    </script>
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="https://raw.githubusercontent.com/jeresig/jquery.hotkeys/master/jquery.hotkeys.js"></script>
+</head>
+<body>
+<div class="container">
+
+
+<div id="container">
+    <header id="header">
+  <div id="header-main" class="header-inner">
+    <div class="outer">
+      <a href="https://archlinuxjp.github.io/" id="logo"><i class="logo" style="background-image: url('https://archlinuxjp.github.io/css/images/logo.png')"></i><span class="site-title">archlinuxjp</span></a>
+      <nav id="main-nav">
+          
+          
+          <a class="main-nav-link" href="//archlinuxjp-slack.herokuapp.com">Community</a>
+	  
+          
+          
+          
+          
+          
+          
+
+          
+	  
+          <a class="main-nav-link" href="https://github.com/archlinuxjp">GitHub</a>
+          
+          
+          
+          
+          
+          <a class="main-nav-link" href="https://archlinuxjp.github.io/tags/">Tags</a>
+
+          <td>
+          
+          
+          
+          <a class="main-nav-link" href="https://archlinuxjp.github.io/categories/">Categories</a>
+
+          <td>
+          
+          
+      </nav>
+        <nav id="sub-nav">
+          <div class="profile" id="profile-nav">
+            <a id="profile-anchor" href="javascript:;"><img class="avatar" src="https://archlinuxjp.github.io/css/images/avatar.png"><i class="fa fa-caret-down"></i></a>
+          </div>
+        </nav>
+        <div id="search-form-wrap">
+          <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form">
+              <input type="search" name="q" results="0" class="search-form-input" placeholder="Search">
+              <button type="submit" class="search-form-submit">
+              </button>
+              <input type="hidden" name="q" value="site:https://archlinuxjp.github.io/">
+         </form>
+        </div>
+    </div>
+  </div>
+  <div id="main-nav-mobile" class="header-sub header-inner">
+    <table class="menu outer">
+      <tbody>
+          <tr>
+          
+          
+          <td><a class="main-nav-link" href="https://archlinuxjp.github.io/">Home</a></td>
+          
+          
+          
+          
+          
+          
+
+          
+          <td><a class="main-nav-link" href="/2015/10/02/linked-post">Linked post</a></td>
+          
+
+          
+          
+          
+          
+          <td><a class="main-nav-link" href="https://archlinuxjp.github.io/tags/">Tags</a></td>
+
+          
+          
+          
+          <td><a class="main-nav-link" href="https://archlinuxjp.github.io/categories/">Categories</a></td>
+
+          
+          
+	  
+
+          <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form">
+          <input type="search" name="q" results="0" class="search-form-input" placeholder="Search">
+          <input type="hidden" name="q" value="site:https://archlinuxjp.github.io/">
+          </form>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</header>
+
+
+    <div class="outer">
+    <aside id="profile">
+  <div class="inner profile-inner">
+    <div class="base-info profile-block">
+      <img id="avatar" src="https://archlinuxjp.github.io/css/images/avatar.png">
+      <h2 id="name">syui</h2>
+      
+      <span id="location"><i class="fa fa-map-marker"></i>Japan</span>
+      
+          <a id="follow" href="https://github.com/syui">
+              Follow
+          </a>
+      
+    </div>
+    <div class="article-info profile-block">
+      <div class="article-info-block">
+        8
+        <span>Posts</span>
+      </div>
+      <div class="article-info-block">
+        12
+        <span>
+            Tags
+        </span>
+      </div>
+    </div>
+    <div class="contact-info profile-block">
+      <table class="contact-list">
+        <tr>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <td><a href="https://archlinuxjp.github.io/index.xml" target="_blank" title="RSS"><i class="fa fa-rss"></i></a></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</aside>
+
+    <section id="main">
+    
+    
+    <article class="article article-type-post" itemscope="" itemprop="blogPost">
+	    <div class="article-inner" onclick="location.href=&quot;https:\/\/archlinuxjp.github.io\/2015\/12\/14\/archlinuxjp-blog&quot;;" style="cursor: pointer;">
+            
+            <a href="https://archlinuxjp.github.io/2015/12/14/archlinuxjp-blog" itemprop="url">
+                <img src="https://archlinuxjp.github.io/banners/archlinux.png" class="article-banner"> 
+            </a>
+
+            <header class="article-header">
+    <a href="https://archlinuxjp.github.io/2015/12/14/archlinuxjp-blog">
+
+    <h1 class="article-title" itemprop="name">
+        ArchLinuxJPのブログを作ってみた
+    </h1>
+    </a>
+        <div class="article-date">
+            <i class="fa fa-calendar"></i>
+            <time datetime="2015-12-14 00:00:00 &#43;0000 UTC" itemprop="datePublished">2015-12-14</time>
+            &middot;
+            44
+            words
+            &middot;
+            1
+            minute read
+        </div>
+	<br>
+    <div class="article-meta">
+
+        
+        
+        <div class="article-category">
+            <i class="fa fa-folder"></i>
+            
+            <a class="article-category-link" href="https://archlinuxjp.github.io/categories/news">News</a>
+            
+            
+        </div>
+        
+        
+        
+        <div class="article-category">
+            <i class="fa fa-tags"></i>
+            
+            <a class="article-category-link" href="https://archlinuxjp.github.io/tags/archlinuxjp">archlinuxjp</a>
+            &middot;
+            
+            <a class="article-category-link" href="https://archlinuxjp.github.io/tags/hugo">hugo</a>
+            
+            
+        </div>
+        
+    </div>
+</header>
+
+            <div class="article-entry" itemprop="articleBody">
+                <p>
+                    
+                </p>
+		
+            </div>
+	    
+        </div>
+    </article>
+    
+    <article class="article article-type-post" itemscope="" itemprop="blogPost">
+	    <div class="article-inner" onclick="location.href=&quot;https:\/\/archlinuxjp.github.io\/2015\/12\/13\/hello-world-archlinuxjp&quot;;" style="cursor: pointer;">
+            
+            <a href="https://archlinuxjp.github.io/2015/12/13/hello-world-archlinuxjp" itemprop="url">
+                <img src="https://archlinuxjp.github.io/banners/archlinux.png" class="article-banner"> 
+            </a>
+
+            <header class="article-header">
+    <a href="https://archlinuxjp.github.io/2015/12/13/hello-world-archlinuxjp">
+
+    <h1 class="article-title" itemprop="name">
+        ArchLinuxJPのコミュニティをSlackで作ってみた
+    </h1>
+    </a>
+        <div class="article-date">
+            <i class="fa fa-calendar"></i>
+            <time datetime="2015-12-13 00:00:00 &#43;0000 UTC" itemprop="datePublished">2015-12-13</time>
+            &middot;
+            171
+            words
+            &middot;
+            1
+            minute read
+        </div>
+	<br>
+    <div class="article-meta">
+
+        
+        
+        <div class="article-category">
+            <i class="fa fa-folder"></i>
+            
+            <a class="article-category-link" href="https://archlinuxjp.github.io/categories/news">News</a>
+            
+            
+        </div>
+        
+        
+        
+        <div class="article-category">
+            <i class="fa fa-tags"></i>
+            
+            <a class="article-category-link" href="https://archlinuxjp.github.io/tags/community">community</a>
+            &middot;
+            
+            <a class="article-category-link" href="https://archlinuxjp.github.io/tags/archlinux">archlinux</a>
+            &middot;
+            
+            <a class="article-category-link" href="https://archlinuxjp.github.io/tags/slack">slack</a>
+            &middot;
+            
+            <a class="article-category-link" href="https://archlinuxjp.github.io/tags/hubot">hubot</a>
+            &middot;
+            
+            <a class="article-category-link" href="https://archlinuxjp.github.io/tags/wercker">wercker</a>
+            &middot;
+            
+            <a class="article-category-link" href="https://archlinuxjp.github.io/tags/heroku">heroku</a>
+            
+            
+        </div>
+        
+    </div>
+</header>
+
+            <div class="article-entry" itemprop="articleBody">
+                <p>
+                    
+                </p>
+		
+            </div>
+	    
+        </div>
+    </article>
+    
+    <article class="article article-type-post" itemscope="" itemprop="blogPost">
+	    <div class="article-inner" onclick="location.href=&quot;https:\/\/archlinuxjp.github.io\/2015\/10\/10\/introducing-icarus-and-its-features&quot;;" style="cursor: pointer;">
+            
+            <a href="https://archlinuxjp.github.io/2015/10/10/introducing-icarus-and-its-features" itemprop="url">
+                <img src="https://archlinuxjp.github.io/banners/placeholder.png" class="article-banner"> 
+            </a>
+
+            <header class="article-header">
+    <a href="https://archlinuxjp.github.io/2015/10/10/introducing-icarus-and-its-features">
+
+    <h1 class="article-title" itemprop="name">
+        Introducing Icarus and it&#39;s features
+    </h1>
+    </a>
+        <div class="article-date">
+            <i class="fa fa-calendar"></i>
+            <time datetime="2015-10-10 16:56:43 &#43;0200 &#43;0200" itemprop="datePublished">2015-10-10</time>
+            &middot;
+            791
+            words
+            &middot;
+            4
+            minute read
+        </div>
+	<br>
+    <div class="article-meta">
+
+        
+        
+        <div class="article-category">
+            <i class="fa fa-folder"></i>
+            
+            <a class="article-category-link" href="https://archlinuxjp.github.io/categories/lorem">Lorem</a>
+            
+            
+        </div>
+        
+        
+        
+        <div class="article-category">
+            <i class="fa fa-tags"></i>
+            
+            <a class="article-category-link" href="https://archlinuxjp.github.io/tags/theme">theme</a>
+            &middot;
+            
+            <a class="article-category-link" href="https://archlinuxjp.github.io/tags/hugo">hugo</a>
+            &middot;
+            
+            <a class="article-category-link" href="https://archlinuxjp.github.io/tags/static-sites">static sites</a>
+            
+            
+        </div>
+        
+    </div>
+</header>
+
+            <div class="article-entry" itemprop="articleBody">
+                <p>
+                    Icarus is a responsive and customizable theme for bloggers. It&rsquo;s a port of the same-named theme for Hexo made by Ruipeng Zhang. Noteworthy features of this Hugo theme are the integration of a comment-system powered by Disqus, localization (l10n) support, syntax highlighting for source code, optional widgets for the sidebar and a handful shortcodes to make your life easier. Get the theme I assume you&rsquo;ve Git installed. Inside the folder of your Hugo site run $ mkdir themes $ cd themes $ git clone git@github.com:digitalcraftsman/hugo-icarus-theme.git You should see a folder called hugo-icarus-theme inside the themes directory, that we created a few moments ago.
+                </p>
+		
+            </div>
+	    
+        </div>
+    </article>
+    
+    <article class="article article-type-post" itemscope="" itemprop="blogPost">
+	    <div class="article-inner" onclick="location.href=&quot;https:\/\/archlinuxjp.github.io\/2015\/10\/10\/migrate-from-jekyll&quot;;" style="cursor: pointer;">
+            
+            <a href="https://archlinuxjp.github.io/2015/10/10/migrate-from-jekyll" itemprop="url">
+                <img src="https://archlinuxjp.github.io/banners/placeholder.png" class="article-banner"> 
+            </a>
+
+            <header class="article-header">
+    <a href="https://archlinuxjp.github.io/2015/10/10/migrate-from-jekyll">
+
+    <h1 class="article-title" itemprop="name">
+        Migrate from Jekyll
+    </h1>
+    </a>
+        <div class="article-date">
+            <i class="fa fa-calendar"></i>
+            <time datetime="2015-10-10 13:07:31 &#43;0200 &#43;0200" itemprop="datePublished">2015-10-10</time>
+            &middot;
+            813
+            words
+            &middot;
+            4
+            minute read
+        </div>
+	<br>
+    <div class="article-meta">
+
+        
+        
+        <div class="article-category">
+            <i class="fa fa-folder"></i>
+            
+            <a class="article-category-link" href="https://archlinuxjp.github.io/categories/lorem">Lorem</a>
+            
+            
+        </div>
+        
+        
+        
+    </div>
+</header>
+
+            <div class="article-entry" itemprop="articleBody">
+                <p>
+                    Move static content to static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like ▾ &lt;root&gt;/ ▾ images/ logo.png should become ▾ &lt;root&gt;/ ▾ static/ ▾ images/ logo.png Additionally, you&rsquo;ll want any files that should reside at the root (such as CNAME) to be moved to static.
+                </p>
+		
+            </div>
+	    
+        </div>
+    </article>
+    
+    <article class="article article-type-post" itemscope="" itemprop="blogPost">
+	    <div class="article-inner" onclick="location.href=&quot;https:\/\/archlinuxjp.github.io\/2015\/10\/02\/linked-post&quot;;" style="cursor: pointer;">
+            
+            <a href="https://archlinuxjp.github.io/2015/10/02/linked-post" itemprop="url">
+                <img src="https://archlinuxjp.github.io/banners/placeholder.png" class="article-banner"> 
+            </a>
+
+            <header class="article-header">
+    <a href="https://archlinuxjp.github.io/2015/10/02/linked-post">
+
+    <h1 class="article-title" itemprop="name">
+        Linked post
+    </h1>
+    </a>
+        <div class="article-date">
+            <i class="fa fa-calendar"></i>
+            <time datetime="2015-10-02 21:49:20 &#43;0200 &#43;0200" itemprop="datePublished">2015-10-02</time>
+            &middot;
+            291
+            words
+            &middot;
+            2
+            minute read
+        </div>
+	<br>
+    <div class="article-meta">
+
+        
+        
+        <div class="article-category">
+            <i class="fa fa-folder"></i>
+            
+            <a class="article-category-link" href="https://archlinuxjp.github.io/categories/programming">programming</a>
+            
+            
+        </div>
+        
+        
+        
+        <div class="article-category">
+            <i class="fa fa-tags"></i>
+            
+            <a class="article-category-link" href="https://archlinuxjp.github.io/tags/golang">golang</a>
+            &middot;
+            
+            <a class="article-category-link" href="https://archlinuxjp.github.io/tags/programming">programming</a>
+            &middot;
+            
+            <a class="article-category-link" href="https://archlinuxjp.github.io/tags/theme">theme</a>
+            &middot;
+            
+            <a class="article-category-link" href="https://archlinuxjp.github.io/tags/hugo">hugo</a>
+            
+            
+        </div>
+        
+    </div>
+</header>
+
+            <div class="article-entry" itemprop="articleBody">
+                <p>
+                    I&rsquo;m a linked post in the menu. You can add other posts by adding the following line to the frontmatter: menu = &quot;main&quot; Lorem ipsum dolor sit amet, consectetur adipiscing elit. In mauris nulla, vestibulum vel auctor sed, posuere eu lorem. Aliquam consequat augue ut accumsan mollis. Suspendisse malesuada sodales tincidunt. Vivamus sed erat ac augue bibendum porta sed id ipsum. Ut mollis mauris eget ligula sagittis cursus. Aliquam id pharetra tellus.
+                </p>
+		
+            </div>
+	    
+        </div>
+    </article>
+    
+    <article class="article article-type-post" itemscope="" itemprop="blogPost">
+	    <div class="article-inner" onclick="location.href=&quot;https:\/\/archlinuxjp.github.io\/2015\/09\/17\/go-is-for-lovers&quot;;" style="cursor: pointer;">
+            
+            <a href="https://archlinuxjp.github.io/2015/09/17/go-is-for-lovers" itemprop="url">
+                <img src="https://archlinuxjp.github.io/banners/placeholder.png" class="article-banner"> 
+            </a>
+
+            <header class="article-header">
+    <a href="https://archlinuxjp.github.io/2015/09/17/go-is-for-lovers">
+
+    <h1 class="article-title" itemprop="name">
+        Go is for lovers
+    </h1>
+    </a>
+        <div class="article-date">
+            <i class="fa fa-calendar"></i>
+            <time datetime="2015-09-17 13:47:08 &#43;0200 &#43;0200" itemprop="datePublished">2015-09-17</time>
+            &middot;
+            1490
+            words
+            &middot;
+            7
+            minute read
+        </div>
+	<br>
+    <div class="article-meta">
+
+        
+        
+        <div class="article-category">
+            <i class="fa fa-folder"></i>
+            
+            <a class="article-category-link" href="https://archlinuxjp.github.io/categories/ipsum">Ipsum</a>
+            
+            
+        </div>
+        
+        
+        
+    </div>
+</header>
+
+            <div class="article-entry" itemprop="articleBody">
+                <p>
+                    Hugo uses the excellent go html/template library for its template engine. It is an extremely lightweight engine that provides a very small amount of logic. In our experience that it is just the right amount of logic to be able to create a good static website. If you have used other template systems from different languages or frameworks you will find a lot of similarities in go templates. This document is a brief primer on using go templates.
+                </p>
+		
+            </div>
+	    
+        </div>
+    </article>
+    
+    <article class="article article-type-post" itemscope="" itemprop="blogPost">
+	    <div class="article-inner" onclick="location.href=&quot;https:\/\/archlinuxjp.github.io\/2015\/08\/03\/hugo-is-for-lovers&quot;;" style="cursor: pointer;">
+            
+            <a href="https://archlinuxjp.github.io/2015/08/03/hugo-is-for-lovers" itemprop="url">
+                <img src="https://archlinuxjp.github.io/banners/placeholder.png" class="article-banner"> 
+            </a>
+
+            <header class="article-header">
+    <a href="https://archlinuxjp.github.io/2015/08/03/hugo-is-for-lovers">
+
+    <h1 class="article-title" itemprop="name">
+        Hugo is for lovers
+    </h1>
+    </a>
+        <div class="article-date">
+            <i class="fa fa-calendar"></i>
+            <time datetime="2015-08-03 13:39:46 &#43;0200 &#43;0200" itemprop="datePublished">2015-08-03</time>
+            &middot;
+            349
+            words
+            &middot;
+            2
+            minute read
+        </div>
+	<br>
+    <div class="article-meta">
+
+        
+        
+        <div class="article-category">
+            <i class="fa fa-folder"></i>
+            
+            <a class="article-category-link" href="https://archlinuxjp.github.io/categories/lorem">Lorem</a>
+            
+            
+        </div>
+        
+        
+        
+    </div>
+</header>
+
+            <div class="article-entry" itemprop="articleBody">
+                <p>
+                    Step 1. Install Hugo Goto hugo releases and download the appropriate version for your os and architecture. Save it somewhere specific as we will be using it in the next step. More complete instructions are available at installing hugo Step 2. Build the Docs Hugo has its own example site which happens to also be the documentation site you are reading right now. Follow the following steps: Clone the hugo repository Go into the repo Run hugo in server mode and build the docs Open your browser to http://localhost:1313 Corresponding pseudo commands: git clone https://github.com/spf13/hugo cd hugo /path/to/where/you/installed/hugo server --source=./docs &gt; 29 pages created &gt; 0 tags index created &gt; in 27 ms &gt; Web Server is available at http://localhost:1313 &gt; Press ctrl+c to stop Once you&rsquo;ve gotten here, follow along the rest of this page on your local build.
+                </p>
+		
+            </div>
+	    
+        </div>
+    </article>
+    
+    <article class="article article-type-post" itemscope="" itemprop="blogPost">
+	    <div class="article-inner" onclick="location.href=&quot;https:\/\/archlinuxjp.github.io\/2015\/06\/24\/creating-a-new-theme&quot;;" style="cursor: pointer;">
+            
+            <a href="https://archlinuxjp.github.io/2015/06/24/creating-a-new-theme" itemprop="url">
+                <img src="https://archlinuxjp.github.io/banners/placeholder.png" class="article-banner"> 
+            </a>
+
+            <header class="article-header">
+    <a href="https://archlinuxjp.github.io/2015/06/24/creating-a-new-theme">
+
+    <h1 class="article-title" itemprop="name">
+        Creating a new theme
+    </h1>
+    </a>
+        <div class="article-date">
+            <i class="fa fa-calendar"></i>
+            <time datetime="2015-06-24 13:50:46 &#43;0200 &#43;0200" itemprop="datePublished">2015-06-24</time>
+            &middot;
+            7232
+            words
+            &middot;
+            34
+            minute read
+        </div>
+	<br>
+    <div class="article-meta">
+
+        
+        
+        <div class="article-category">
+            <i class="fa fa-folder"></i>
+            
+            <a class="article-category-link" href="https://archlinuxjp.github.io/categories/lorem">Lorem</a>
+            
+            
+        </div>
+        
+        
+        
+    </div>
+</header>
+
+            <div class="article-entry" itemprop="articleBody">
+                <p>
+                    Introduction This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&rsquo;t cover using CSS to style your theme. We&rsquo;ll start with creating a new site with a very basic template.
+                </p>
+		
+            </div>
+	    
+        </div>
+    </article>
+    
+
+    <nav id="page-nav">
+
+</nav>
+
+</section>
+
+
+    <aside id="sidebar">
+    
+
+<div class="widget-wrap">
+    <div class="widget">
+        <ul id="recent-post">
+		<li id="first-recent"><a href="sitemap.xml" id="firstmove" class="move"><h3 class="widget-title">
+        Recents
+    </h3></a></li>
+            
+	    <li>
+                <div class="item-thumbnail">
+                    <a href="https://archlinuxjp.github.io/2015/12/14/archlinuxjp-blog" class="thumbnail">
+                    
+                        <span style="background-image:url(https://archlinuxjp.github.io/banners/archlinux.png)" alt="archlinuxjp" class="thumbnail-image"></span>
+                    
+                </div>
+		<a href="https://archlinuxjp.github.io/2015/12/14/archlinuxjp-blog" class="move">ArchLinuxJPのブログを作ってみた</a>
+            </li>
+            
+	    <li>
+                <div class="item-thumbnail">
+                    <a href="https://archlinuxjp.github.io/2015/12/13/hello-world-archlinuxjp" class="thumbnail">
+                    
+                        <span style="background-image:url(https://archlinuxjp.github.io/banners/archlinux.png)" alt="archlinuxjp" class="thumbnail-image"></span>
+                    
+                </div>
+		<a href="https://archlinuxjp.github.io/2015/12/13/hello-world-archlinuxjp" class="move">ArchLinuxJPのコミュニティをSlackで作ってみた</a>
+            </li>
+            
+	    <li>
+                <div class="item-thumbnail">
+                    <a href="https://archlinuxjp.github.io/2015/10/10/introducing-icarus-and-its-features" class="thumbnail">
+                    
+                        <span style="background-image:url(https://archlinuxjp.github.io/banners/placeholder.png)" alt="archlinuxjp" class="thumbnail-image"></span>
+                    
+                </div>
+		<a href="https://archlinuxjp.github.io/2015/10/10/introducing-icarus-and-its-features" class="move">Introducing Icarus and it&#39;s features</a>
+            </li>
+            
+	    <li>
+                <div class="item-thumbnail">
+                    <a href="https://archlinuxjp.github.io/2015/10/10/migrate-from-jekyll" class="thumbnail">
+                    
+                        <span style="background-image:url(https://archlinuxjp.github.io/banners/placeholder.png)" alt="archlinuxjp" class="thumbnail-image"></span>
+                    
+                </div>
+		<a href="https://archlinuxjp.github.io/2015/10/10/migrate-from-jekyll" class="move">Migrate from Jekyll</a>
+            </li>
+            
+	    <li>
+                <div class="item-thumbnail">
+                    <a href="https://archlinuxjp.github.io/2015/10/02/linked-post" class="thumbnail">
+                    
+                        <span style="background-image:url(https://archlinuxjp.github.io/banners/placeholder.png)" alt="archlinuxjp" class="thumbnail-image"></span>
+                    
+                </div>
+		<a href="https://archlinuxjp.github.io/2015/10/02/linked-post" class="move">Linked post</a>
+            </li>
+            
+	    <li>
+                <div class="item-thumbnail">
+                    <a href="https://archlinuxjp.github.io/2015/09/17/go-is-for-lovers" class="thumbnail">
+                    
+                        <span style="background-image:url(https://archlinuxjp.github.io/banners/placeholder.png)" alt="archlinuxjp" class="thumbnail-image"></span>
+                    
+                </div>
+		<a href="https://archlinuxjp.github.io/2015/09/17/go-is-for-lovers" class="move">Go is for lovers</a>
+            </li>
+            
+	    <li>
+                <div class="item-thumbnail">
+                    <a href="https://archlinuxjp.github.io/2015/08/03/hugo-is-for-lovers" class="thumbnail">
+                    
+                        <span style="background-image:url(https://archlinuxjp.github.io/banners/placeholder.png)" alt="archlinuxjp" class="thumbnail-image"></span>
+                    
+                </div>
+		<a href="https://archlinuxjp.github.io/2015/08/03/hugo-is-for-lovers" class="move">Hugo is for lovers</a>
+            </li>
+            
+	    <li>
+                <div class="item-thumbnail">
+                    <a href="https://archlinuxjp.github.io/2015/06/24/creating-a-new-theme" class="thumbnail">
+                    
+                        <span style="background-image:url(https://archlinuxjp.github.io/banners/placeholder.png)" alt="archlinuxjp" class="thumbnail-image"></span>
+                    
+                </div>
+		<a href="https://archlinuxjp.github.io/2015/06/24/creating-a-new-theme" class="move">Creating a new theme</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+    
+
+<div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+        <ul class="category-list">
+            
+            <li class="category-list-item">
+                <a class="category-list-link" href="https://archlinuxjp.github.io/categories/ipsum">
+                    ipsum
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                <a class="category-list-link" href="https://archlinuxjp.github.io/categories/lorem">
+                    lorem
+                </a>
+                <span class="category-list-count">4</span>
+            </li>
+            
+            <li class="category-list-item">
+                <a class="category-list-link" href="https://archlinuxjp.github.io/categories/news">
+                    news
+                </a>
+                <span class="category-list-count">2</span>
+            </li>
+            
+            <li class="category-list-item">
+                <a class="category-list-link" href="https://archlinuxjp.github.io/categories/programming">
+                    programming
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+    
+    
+
+<div class="widget-wrap">
+    <h3 class="widget-title">
+        Tag cloud
+    </h3>
+    <div class="widget tagcloud">
+        
+        <a href="https://archlinuxjp.github.io/tags/archlinux" style="font-size: 12px;">archlinux</a>
+        
+        <a href="https://archlinuxjp.github.io/tags/archlinuxjp" style="font-size: 12px;">archlinuxjp</a>
+        
+        <a href="https://archlinuxjp.github.io/tags/community" style="font-size: 12px;">community</a>
+        
+        <a href="https://archlinuxjp.github.io/tags/golang" style="font-size: 12px;">golang</a>
+        
+        <a href="https://archlinuxjp.github.io/tags/heroku" style="font-size: 12px;">heroku</a>
+        
+        <a href="https://archlinuxjp.github.io/tags/hubot" style="font-size: 12px;">hubot</a>
+        
+        <a href="https://archlinuxjp.github.io/tags/hugo" style="font-size: 12px;">hugo</a>
+        
+        <a href="https://archlinuxjp.github.io/tags/programming" style="font-size: 12px;">programming</a>
+        
+        <a href="https://archlinuxjp.github.io/tags/slack" style="font-size: 12px;">slack</a>
+        
+        <a href="https://archlinuxjp.github.io/tags/static-sites" style="font-size: 12px;">static-sites</a>
+        
+        <a href="https://archlinuxjp.github.io/tags/theme" style="font-size: 12px;">theme</a>
+        
+        <a href="https://archlinuxjp.github.io/tags/wercker" style="font-size: 12px;">wercker</a>
+        
+    </div>
+</div>
+
+
+
+
+    
+</aside>
+
+    </div>
+</div>
+
+<footer id="footer">
+  <div class="outer">
+    <div id="footer-info" class="inner">
+	    &copy; 2015 <a href="https://github.com/archlinuxjp">ArchLinuxJP</a>. <br>
+      Powered by <a href="//gohugo.io">Hugo</a>. Theme by <a href="https://github.com/digitalcraftsman/hugo-icarus-theme">hugo-icarus-theme</a>.
+    </div>
+  </div>
+</footer>
+
+
+</body>
+</html>

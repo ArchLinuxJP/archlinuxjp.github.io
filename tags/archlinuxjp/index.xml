@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Archlinuxjp on archlinuxjp</title>
+    <link>https://archlinuxjp.github.io/tags/archlinuxjp/</link>
+    <description>Recent content in Archlinuxjp on archlinuxjp</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <lastBuildDate>Mon, 14 Dec 2015 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://archlinuxjp.github.io/tags/archlinuxjp/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>ArchLinuxJPのブログを作ってみた</title>
+      <link>https://archlinuxjp.github.io/2015/12/14/archlinuxjp-blog</link>
+      <pubDate>Mon, 14 Dec 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://archlinuxjp.github.io/2015/12/14/archlinuxjp-blog</guid>
+      <description>&lt;p&gt;ブログは、主に、以下の様な形で更新されています。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;BitBucketのPrivate RepositoryにSource Codeが置かれる&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Source CodeにPushされると、WerckerがBuildを実行し、Fileを&lt;code&gt;archlinuxjp/archlinux.github.io&lt;/code&gt;のGitHub RepositoryにDeployする&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Deployと同時にSlackに通知される&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;使用したのは、&lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt;のThemeである&lt;a href=&#34;http://themes.gohugo.io/hugo-icarus/&#34;&gt;Icarus&lt;/a&gt;というものです。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ go get -v github.com/spf13/hugo
+
+$ git clone --depth 1 --recursive https://github.com/spf13/hugoThemes.git themes
+
+$ hugo server --theme=hyde --buildDrafts
+
+# build
+$ hugo
+
+# preview
+$ hugo server
+$ curl -sL localhost:1313
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;だいぶ調整したもののIcarusは、&lt;a href=&#34;https://fortawesome.github.io/Font-Awesome/&#34;&gt;Font Awesome&lt;/a&gt;などを使っているので、アイコンとかの設定も楽そうに感じました。&lt;/p&gt;
+
+&lt;p&gt;追加した機能は、&lt;a href=&#34;https://github.com/jeresig/jquery.hotkeys&#34;&gt;jeresig/jquery.hotkeys&lt;/a&gt;を使ってキーバインドを設定。今のところ&lt;code&gt;j&lt;/code&gt;, &lt;code&gt;k&lt;/code&gt;と&lt;code&gt;C-[&lt;/code&gt;を有効にしました。&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
