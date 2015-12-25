@@ -109,6 +109,18 @@ $ tree .
     config.toml
 ```
 
+## Jekyll
+
+`hugo server`と結果が異なることがあります。より確実にプレビューする場合は、`jekyll`を使用してください。
+
+```bash
+$ hugo
+
+$ cd ./public
+
+$ jekyll serve
+```
+
 ## Annotations
 
 Thanks to [Steve Francia](//github.com/spf13) for creating Hugo and the awesome community around the project.

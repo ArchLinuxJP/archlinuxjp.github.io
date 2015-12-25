@@ -1,0 +1,89 @@
+<header id="header">
+  <div id="header-main" class="header-inner">
+    <div class="outer">
+     <!--
+      <a href="{{ .Site.BaseURL }}" id="logo"><i class="logo" style="background-image: url('{{ .Site.BaseURL }}css/images/logo.png')"></i><span class="site-title">{{ .Site.Title }}</span></a>
+      -->
+      <a href="{{ .Site.BaseURL }}" id="logo"><span class="icon-archlinuxjp"></span><span class="site-title">{{ .Site.Title }}</span></a>
+      <nav id="main-nav">
+          {{ range .Site.Params.menu }}
+          {{ if .before }}
+		<a href="//archlinuxjp-slack.heroku.com/"><img src="//archlinuxjp-slack.heroku.com/badge.svg" alt=""></a>
+          <a class="main-nav-link" href="https://wiki.archlinuxjp.org/">ArchWiki</a>
+	  <!--
+          <a class="main-nav-link" href="{{ .link | absURL }}">{{ .label }}</a>
+	  -->
+          {{ end }}
+          {{ end }}
+
+          {{ range .Site.Menus.main }}
+	  <!--
+          <a class="main-nav-link" href="{{ .URL }}">{{ .Name }}</a>
+	  -->
+          <a class="main-nav-link" href="https://github.com/archlinuxjp">Project</a>
+          {{ end }}
+          {{ range .Site.Params.menu }}
+          {{ if not .before }}
+          <a class="main-nav-link" href="{{ .link | absURL }}">{{ .label }}</a>
+
+	  
+          <td>
+          {{ end }}
+
+          {{ end }}
+      </nav>
+        <nav id="sub-nav">
+          <div class="profile" id="profile-nav">
+            <a id="profile-anchor" href="javascript:;"><img class="avatar" src="{{ .Site.BaseURL }}css/images/avatar.png"><i class="fa fa-caret-down"></i></a>
+          </div>
+        </nav>
+        <div id="search-form-wrap">
+          <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form">
+              <input type="search" name="q" results="0" class="search-form-input" placeholder="{{with .Site.Data.l10n.search.placeholder}}{{.}}{{end}}">
+              <button type="submit" class="search-form-submit">
+              </button>
+              <input type="hidden" name="q" value="site:{{ .Site.BaseURL }}">
+         </form>
+        </div>
+    </div>
+  </div>
+  <div id="main-nav-mobile" class="header-sub header-inner">
+    <table class="menu outer">
+      <tbody>
+          <tr>
+          {{ range .Site.Params.menu }}
+          {{ if .before }}
+	  <td><a class="main-nav-link" href="https://wiki.archlinuxjp.org/">ArchWiki</a></td>
+	  <!--
+          <td><a class="main-nav-link" href="{{ .link | absURL }}">{{ .label }}</a></td>
+	  -->
+          {{ end }}
+          {{ end }}
+
+          {{ range .Site.Menus.main }}
+	  <td><a class="main-nav-link" href="https://github.com/archlinuxjp">Project</a></td>
+          
+	  <!--
+          <td><a class="main-nav-link" href="{{ .URL }}">{{ .Name }}</a></td>
+	  -->
+          {{ end }}
+
+          {{ range .Site.Params.menu }}
+          {{ if not .before }}
+          <td><a class="main-nav-link" href="{{ .link  | absURL }}">{{ .label }}</a></td>
+
+          {{ end }}
+          {{ end }}
+
+	  <!--
+          <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form">
+          <input type="search" name="q" results="0" class="search-form-input" placeholder="Search">
+          <input type="hidden" name="q" value="site:{{ .Site.BaseURL }}">
+          </form>
+	  -->
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</header>
