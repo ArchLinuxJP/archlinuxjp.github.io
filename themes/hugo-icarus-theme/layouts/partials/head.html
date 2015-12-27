@@ -1,12 +1,6 @@
 <!DOCTYPE html>
 <html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
 <head>
-
-<script type="text/javascript">
-    var host = "blog.archlinuxjp.org";
-    if ((host == window.location.host) && (window.location.protocol != "https:"))
-        window.location.protocol = "https";
-</script>
     <title>{{ .Title }} &middot; {{ .Site.Title }}</title>
     {{ .Hugo.Generator }}
     <meta charset="utf-8">
@@ -17,22 +11,22 @@
       <link href="{{ .RSSlink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
       <link href="{{ .RSSlink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" />
     {{ end }}
-    <link rel="icon" href="//blog.archlinuxjp.org/favicon.ico">
-    <link rel="apple-touch-icon" href="//blog.archlinuxjp.org/apple-touch-icon.png" />
-    <link rel="stylesheet" href="//blog.archlinuxjp.org/css/style.css">
-    <link rel="stylesheet" href="//blog.archlinuxjp.org/css/font-awesome.min.css">
-    <link rel="stylesheet" href="//blog.archlinuxjp.org/css/monokai.css">
-    <link rel="stylesheet" href="//blog.archlinuxjp.org/fancybox/jquery.fancybox.css">
-    <link href='//fonts.googleapis.com/css?family=Open+Sans:400italic,400,600' rel='stylesheet' type='text/css'>
-    <link href='//fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
+    <link rel="icon" href="{{ .Site.BaseURL }}favicon.ico">
+    <link rel="apple-touch-icon" href="{{ .Site.BaseURL }}apple-touch-icon.png" />
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/style.css">
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/monokai.css">
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}fancybox/jquery.fancybox.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
     {{ template "_internal/opengraph.html" . }}
     {{ template "_internal/google_news.html" . }}
     {{ template "_internal/schema.html" . }}
     {{ template "_internal/twitter_cards.html" . }}
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="//blog.archlinuxjp.org/fancybox/jquery.fancybox.pack.js"></script>
-    <script src="//blog.archlinuxjp.org/js/script.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="{{ .Site.BaseURL }}fancybox/jquery.fancybox.pack.js"></script>
+    <script src="{{ .Site.BaseURL }}js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
     
     <!-- MathJax -->
@@ -42,9 +36,9 @@
         inlineMath: [['$','$'], ['\\(','\\)']]}
       });
     </script>
-    <script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     
-    <script type="text/javascript" src="//raw.githubusercontent.com/jeresig/jquery.hotkeys/master/jquery.hotkeys.js"></script>
+    <script type="text/javascript" src="https://raw.githubusercontent.com/jeresig/jquery.hotkeys/master/jquery.hotkeys.js"></script>
 </head>
 <body>
 <div class="container">
