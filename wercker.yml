@@ -22,7 +22,7 @@ build:
     after-steps:
         - wantedly/pretty-slack-notify:
               webhook_url: $SLACK_WEBHOOK_URL
-              channel: rss
+              channel: feed
 deploy:
     steps:
     - script:
@@ -46,4 +46,4 @@ deploy:
     after-steps:
     - wantedly/pretty-slack-notify:
           webhook_url: $SLACK_WEBHOOK_URL
-          channel: rss
+          channel: feed
