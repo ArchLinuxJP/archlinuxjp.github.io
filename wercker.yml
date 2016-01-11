@@ -5,20 +5,6 @@ build:
                 version: "0.14"
                 theme: hugo-icarus-theme
                 flags: --buildDrafts=true
-        - script:
-            name: Configure git
-            code: |-
-              git config --global user.email "${MAIL_ADDRESS}"
-              git config --global user.name "syui"
-              rm -rf .git
-        - script:
-            name: Deploy to github pages
-            code: |-
-              cd ./public
-              git init
-              git add .
-              git commit -m "update"
-              git push -f https://${GITHUB_TOKEN}@github.com/archlinuxjp/archlinuxjp.github.io.git master
     after-steps:
         - wantedly/pretty-slack-notify:
               webhook_url: $SLACK_WEBHOOK_URL

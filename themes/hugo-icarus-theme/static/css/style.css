@@ -824,21 +824,22 @@ a:visited {
   display: block;
   margin-bottom: 14px;
 }
+
 .article-title {
   text-decoration: none !important;
   font-size: 2em;
-  color: #565a5f !important;
+  color:#38b7ea !important;
   line-height: 1.1em;
   -webkit-transition: color 0.2s;
   -moz-transition: color 0.2s;
   -ms-transition: color 0.2s;
   transition: color 0.2s;
 }
-a.article-title:visited {
-  color: #565a5f !important;
+.article-title a:visited {
+  color: #07b !important;
 }
-a.article-title:hover {
-  color: #38b7ea !important;
+.article-title a:hover {
+  color: #07b !important;
 }
 .article-entry {
   color: #565a5f;
@@ -1072,9 +1073,12 @@ a.article-title:hover {
   margin-top: 40px;
   text-align: left;
   display: block;
+  margin-left: 15px;
+  margin-right: 15px;
 }
+
 .article-nav-link-wrap:hover {
-  color: #565a5f;
+  color: #07b;
 }
 @media screen and (min-width: 1200px) {
   .article-nav-link-wrap {
@@ -1681,7 +1685,7 @@ pre .javascript .function {
   margin-right: 5px;
 }
 .widget-wrap {
-  margin: 40px 10px;
+  margin: 0px 10px;
 }
 @media screen and (max-width: 559px) {
   .widget-wrap {
@@ -1925,52 +1929,6 @@ h1.article-title {
     color: #000;
 }
 
-
-
-.hatena {
-word-break: break-all;
-white-space: inherit;
-}
-.hatena img {
-float: left;
-padding-right: 15px;
-}
-
-.hatena-reference {
-text-align: right;
-font-size: 13px;
-padding-bottom:40px;
-}
-
-.twitter {
-word-break: break-all;
-white-space: inherit;
-}
-.twitter img {
-float: left;
-padding-right: 15px;
-}
-
-.twitter-reference {
-text-align: right;
-font-size: 13px;
-padding-bottom:40px;
-}
-.qiita {
-word-break: break-all;
-white-space: inherit;
-}
-.qiita img {
-float: left;
-padding-right: 15px;
-}
-
-.qiita-reference {
-text-align: right;
-font-size: 13px;
-padding-bottom:40px;
-}
-
 .article-meta .article-date, .article-meta{
 /*.article-meta .article-date, .article-meta .article-category{*/
 /*padding-top: 30px;*/
@@ -1999,7 +1957,7 @@ padding-bottom:40px;
 }
 
 .container-fluid {
-    padding-top: 5px;
+    padding-top: 3px;
     padding-bottom:3px;
 }
 
@@ -2020,7 +1978,7 @@ padding-bottom:40px;
 */
 
 .header-inner {
-    border-bottom: solid 4px #428bca;
+    border-bottom: solid 5px #428bca;
 }
 
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
