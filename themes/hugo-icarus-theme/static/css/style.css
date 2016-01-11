@@ -844,7 +844,7 @@ a.article-title:hover {
   color: #565a5f;
   padding: 0 20px;
   line-height: 1.6em;
-  padding-top: 100px;
+  padding-top: 20px;
 }
 .article-entry:before,
 .article-entry:after {
@@ -2054,3 +2054,4 @@ pre {
 #main {
     width: 70%;
 }
+
