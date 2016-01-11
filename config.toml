@@ -1,6 +1,6 @@
 baseurl = "https://archlinuxjp.github.io/"
 languageCode = "ja-jp"
-title = "ArchLinuxJP"
+title = "ArchLinuxJP Blog"
 # Enable comments by entering your Disqus shortname
 disqusShortname = "archlinuxjp"
 # Enable Google Analytics by entering your tracking code
