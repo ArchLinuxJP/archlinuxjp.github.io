@@ -2,7 +2,7 @@ baseurl = "https://archlinuxjp.github.io/"
 languageCode = "ja-jp"
 title = "ArchLinuxJP"
 # Enable comments by entering your Disqus shortname
-#disqusShortname = "syui"
+disqusShortname = "archlinuxjp"
 # Enable Google Analytics by entering your tracking code
 googleAnalytics = ""
 # Define the number of posts per site
@@ -15,7 +15,6 @@ theme = "hugo-icarus-theme"
 
 [params]
     # Tell me who you're
-    author = "ArchLinuxJP"
     location = "Japan"
     site_description = ""
     copyright  = "Powered by [Hugo](//gohugo.io). Theme by [hugo-icarus-theme](https://github.com/digitalcraftsman/hugo-icarus-theme)."
