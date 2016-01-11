@@ -15,7 +15,7 @@
 .navbar-brand span.icon-archlinuxjp-simple {
 	font-size: 45px;
 	color: #fff;
-	position:relative;
+	/* position:relative; */
 }
 
 .navbar-brand span.icon-archlinux-font-arch {
