@@ -1,4 +1,4 @@
-baseurl = "https://archlinuxjp.github.io"
+baseurl = "https://archlinuxjp.github.io/"
 languageCode = "ja-jp"
 title = "ArchLinuxJP"
 # Enable comments by entering your Disqus shortname
