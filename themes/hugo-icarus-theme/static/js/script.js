@@ -102,7 +102,6 @@
   //}).on('click', '#toTop', function () {
   //  $(document).scrollTop(0);
   //});
-  
 //hotkeys
 $(function() {
   var firstmove = true;
@@ -121,5 +120,6 @@ $(function() {
     this.focus();
   });
 });
+ 
 
 })(jQuery);

@@ -14,9 +14,11 @@
     <link rel="icon" href="{{ .Site.BaseURL }}favicon.ico">
     <link rel="apple-touch-icon" href="{{ .Site.BaseURL }}apple-touch-icon.png" />
     <link rel="stylesheet" href="{{ .Site.BaseURL }}css/style.css">
-    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/font-awesome.min.css">
     <link rel="stylesheet" href="{{ .Site.BaseURL }}css/monokai.css">
     <link rel="stylesheet" href="{{ .Site.BaseURL }}fancybox/jquery.fancybox.css">
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}font/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}font/icomoon/css/icomoon.css">
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/font.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
     {{ template "_internal/opengraph.html" . }}
@@ -37,8 +39,16 @@
       });
     </script>
     <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    
-    <script type="text/javascript" src="https://raw.githubusercontent.com/jeresig/jquery.hotkeys/master/jquery.hotkeys.js"></script>
+
+    <!-- hotkeys -->
+    <script src="{{ .Site.BaseURL }}js/jquery.hotkeys.js "></script>
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}bootstrap/css/bootstrap.min.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="{{ .Site.BaseURL }}bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/bootstrap.css">
+
 </head>
 <body>
 <div class="container">

@@ -1,5 +1,4 @@
 +++
-banner = "banners/placeholder.png"
 categories = ["News"]
 date = "2015-12-13"
 menu = ""

@@ -1,0 +1,128 @@
+.navbar-brand span.icon-archlinux:hover {
+	-webkit-transition: 0.3s ease-in-out;
+	-moz-transition: 0.3s ease-in-out;
+	-o-transition: 0.3s ease-in-out;
+	transition: 0.3s ease-in-out;
+	color: #38B7EA;
+}
+
+.navbar-brand span.icon-archlinuxjp {
+	font-size: 45px;
+	position: absolute;
+	color: #38B7EA;
+}
+
+.navbar-brand span.icon-archlinuxjp-simple {
+	font-size: 45px;
+	color: #fff;
+	position:relative;
+}
+
+.navbar-brand span.icon-archlinux-font-arch {
+	font-size: 38px;
+	color: #fff;
+}
+
+.navbar-brand span.icon-archlinux-font-linux {
+	font-size: 38px;
+	color: #1794D1;
+}
+
+.navbar-brand span.icon-archlinuxjp:hover {
+	color:#38b7ea;
+}
+
+
+
+.navbar-brand a:link {
+	text-decoration: none !important;
+}
+
+.navbar-brand a: {
+	text-decoration: none !important;
+}
+
+/* effect */
+a:hover span.icon-archlinuxjp {
+	-webkit-transition: 0.3s ease-in-out;
+	-moz-transition: 0.3s ease-in-out;
+	-o-transition: 0.3s ease-in-out;
+	transition: 0.3s ease-in-out;
+	-moz-text-shadow:0px 0px 1px black, 0 0 15px #38b7ea;
+	-webkit-text-shadow:0px 0px 1px black, 0 0 15px #38b7ea;
+	-o-text-shadow:0px 0px 1px black, 0 0 15px #38b7ea;
+	text-shadow:0px 0px 1px black, 0 0 15px #38b7ea;
+	color:#38b7ea;
+}
+
+a:hover span.icon-archlinuxjp-simple {
+	-webkit-transition: 0.3s ease-in-out;
+	-moz-transition: 0.3s ease-in-out;
+	-o-transition: 0.3s ease-in-out;
+	transition: 0.3s ease-in-out;
+	-moz-text-shadow:0px 0px 1px #38b7ea, 0 0 5px #38b7ea;
+	-webkit-text-shadow:0px 0px 1px #38b7ea, 0 0 5px #38b7ea;
+	-o-text-shadow:0px 0px 1px #38b7ea, 0 0 5px #38b7ea;
+	text-shadow:0px 0px 1px #38b7ea, 0 0 5px #38b7ea;
+	color:#fff;
+}
+
+/* font-awesome */
+.fa-rss {
+	color: #FF5500;
+}
+
+.fa-rss:hover {
+	-webkit-transition: 0.3s ease-in-out;
+	-moz-transition: 0.3s ease-in-out;
+	-o-transition: 0.3s ease-in-out;
+	transition: 0.3s ease-in-out;
+	color: #07b;
+}
+
+.fa-rss-square {
+	color: #FF5500;
+}
+.fa-rss-square:hover {
+	-webkit-transition: 0.3s ease-in-out;
+	-moz-transition: 0.3s ease-in-out;
+	-o-transition: 0.3s ease-in-out;
+	transition: 0.3s ease-in-out;
+	color: #07b;
+}
+
+.fa-bars:hover {
+	-webkit-transition: 0.3s ease-in-out;
+	-moz-transition: 0.3s ease-in-out;
+	-o-transition: 0.3s ease-in-out;
+	transition: 0.3s ease-in-out;
+	color: #1794D1;
+}
+
+.fa-bars {
+	color: #fff;
+	padding-top: 7px;
+}
+
+.navbar-brand span.site-title {
+	position: absolute;
+	padding-left: 5px;
+}
+
+.header-inner {
+    background-color: #333;
+
+}
+
+a.navbar-brand span.site-title {
+    color: #fff;
+}
+
+#header a, #header a:visited {
+    color: #fff;
+}
+
+#header a:hover, #header a:hover {
+	color:#38b7ea;
+}
+

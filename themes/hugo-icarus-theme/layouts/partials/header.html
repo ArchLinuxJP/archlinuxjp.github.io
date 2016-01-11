@@ -1,25 +1,89 @@
 <header id="header">
   <div id="header-main" class="header-inner">
     <div class="outer">
-     <!--
-      <a href="{{ .Site.BaseURL }}" id="logo"><i class="logo" style="background-image: url('{{ .Site.BaseURL }}css/images/logo.png')"></i><span class="site-title">{{ .Site.Title }}</span></a>
+	<nav class="navbar navbar-default">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+      		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+      		  <span class="sr-only">Toggle navigation</span>
+      		  <span class="icon-bar"></span>
+      		  <span class="icon-bar"></span>
+      		  <span class="icon-bar"></span>
+      		</button>
+		    <h1>
+			    <a class="navbar-brand" href="{{ .Site.BaseURL }}">
+				    <span class="icon-archlinuxjp"></span>
+				    <span class="icon-archlinuxjp-simple"></span>
+				    <span class="site-title">{{ .Site.Title }}</span>
+			    </a>
+		    </h1>
+	    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <!--
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
       -->
-      <a href="{{ .Site.BaseURL }}" id="logo"><span class="icon-archlinuxjp"></span><span class="site-title">{{ .Site.Title }}</span></a>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="https://archlinuxjp.org/">ホーム</a></li>
+        <li><a href="https://archlinuxjp.org/packages/">パッケージ</a></li>
+        <li><a href="https://bbs.archlinuxjp.org/">フォーラム</a></li>
+        <li class="dropdown">
+          <a href="https://wiki.archlinuxjp.org/index.php/%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%9A%E3%83%BC%E3%82%B8" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ArchWiki<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="https://wiki.archlinuxjp.org/index.php/%E3%82%AB%E3%83%86%E3%82%B4%E3%83%AA:Arch_%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6">Arch について</a></li>
+            <li><a href="https://wiki.archlinuxjp.org/index.php/%E3%82%AB%E3%83%86%E3%82%B4%E3%83%AA:Arch_%E3%81%AE%E5%85%A5%E6%89%8B%E3%81%A8%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB">Arch の入手とインストール</a></li>
+            <li><a href="https://wiki.archlinuxjp.org/index.php/%E3%82%AB%E3%83%86%E3%82%B4%E3%83%AA:%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E7%AE%A1%E7%90%86">システム管理</a></li>
+            <li><a href="https://wiki.archlinuxjp.org/index.php/%E3%82%AB%E3%83%86%E3%82%B4%E3%83%AA:%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E3%83%AA%E3%82%AB%E3%83%90%E3%83%AA">システムリカバリ</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="https://wiki.archlinuxjp.org/index.php/%E3%82%AB%E3%83%86%E3%82%B4%E3%83%AA:%E3%82%A2%E3%83%97%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3">アプリケーション</a></li>
+            <li><a href="https://wiki.archlinuxjp.org/index.php/%E3%82%AB%E3%83%86%E3%82%B4%E3%83%AA:%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E7%AE%A1%E7%90%86">システム管理</a></li>
+            <li><a href="https://wiki.archlinuxjp.org/index.php/%E3%82%AB%E3%83%86%E3%82%B4%E3%83%AA:%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF">ネットワーク</a></li>
+            <li><a href="https://wiki.archlinuxjp.org/index.php/%E3%82%AB%E3%83%86%E3%82%B4%E3%83%AA:%E3%83%8F%E3%83%BC%E3%83%89%E3%82%A6%E3%82%A7%E3%82%A2">ハードウェア</a></li>
+            <li><a href="https://wiki.archlinuxjp.org/index.php/%E3%82%AB%E3%83%86%E3%82%B4%E3%83%AA:%E9%96%8B%E7%99%BA">開発</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="https://archlinuxjp.org/">メインページ</a></li>
+          </ul>
+        </li>
+        <li><a href="/">ブログ</a></li>
+        <li><a href="https://archlinuxjp-slack.herokuapp.com/">Slack</a></li>
+        <li><a href="https://www.archlinuxjp.org/download/">ダウンロード</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<!--
       <nav id="main-nav">
           {{ range .Site.Params.menu }}
           {{ if .before }}
 		<a href="//archlinuxjp-slack.heroku.com/"><img src="//archlinuxjp-slack.heroku.com/badge.svg" alt=""></a>
           <a class="main-nav-link" href="https://wiki.archlinuxjp.org/">ArchWiki</a>
-	  <!--
           <a class="main-nav-link" href="{{ .link | absURL }}">{{ .label }}</a>
-	  -->
           {{ end }}
           {{ end }}
 
           {{ range .Site.Menus.main }}
-	  <!--
-          <a class="main-nav-link" href="{{ .URL }}">{{ .Name }}</a>
-	  -->
           <a class="main-nav-link" href="https://github.com/archlinuxjp">Project</a>
           {{ end }}
           {{ range .Site.Params.menu }}
@@ -54,18 +118,13 @@
           {{ range .Site.Params.menu }}
           {{ if .before }}
 	  <td><a class="main-nav-link" href="https://wiki.archlinuxjp.org/">ArchWiki</a></td>
-	  <!--
-          <td><a class="main-nav-link" href="{{ .link | absURL }}">{{ .label }}</a></td>
-	  -->
+
           {{ end }}
           {{ end }}
 
           {{ range .Site.Menus.main }}
 	  <td><a class="main-nav-link" href="https://github.com/archlinuxjp">Project</a></td>
-          
-	  <!--
-          <td><a class="main-nav-link" href="{{ .URL }}">{{ .Name }}</a></td>
-	  -->
+
           {{ end }}
 
           {{ range .Site.Params.menu }}
@@ -74,16 +133,10 @@
 
           {{ end }}
           {{ end }}
-
-	  <!--
-          <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form">
-          <input type="search" name="q" results="0" class="search-form-input" placeholder="Search">
-          <input type="hidden" name="q" value="site:{{ .Site.BaseURL }}">
-          </form>
-	  -->
         </td>
       </tr>
       </tbody>
     </table>
   </div>
+  -->
 </header>

@@ -1,6 +1,6 @@
 baseurl = "http://blog.archlinuxjp.org/"
 languageCode = "ja-jp"
-title = "ArchLinuxJP Blog"
+title = "ArchLinuxJP"
 # Enable comments by entering your Disqus shortname
 #disqusShortname = "syui"
 # Enable Google Analytics by entering your tracking code

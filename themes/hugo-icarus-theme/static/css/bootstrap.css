@@ -1,0 +1,44 @@
+.navbar-header h1 {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.navbar-default {
+    background-color: #333;
+    border-color: none;
+}
+.navbar {
+    border-radius: 0;
+}
+.navbar {
+    position: none;
+    min-height: 0;
+    margin-bottom: 0;
+    border: none;
+}
+
+.navbar-nav > li > .dropdown-menu {
+    background-color: #333;
+}
+
+.navbar-toggle {
+    border: 0px solid transparent;
+    border-radius: 0px;
+}
+
+#header a:visited > a.dropdown-toggle {
+	color:#333;
+}
+
+.dropdown-menu .divider {
+    background-color: #38b7ea;
+}
+
+.thumbnail {
+    padding: 0px;
+    border: 0px solid #ddd;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+    display: initial;
+}
