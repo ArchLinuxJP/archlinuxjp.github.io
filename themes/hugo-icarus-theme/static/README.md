@@ -230,6 +230,37 @@ width : mobile
 </nav>
 ```
 
+### Dropdown Menus Enhancement
+
+```bash
+$ curl -sLO https://raw.githubusercontent.com/behigh/bootstrap_dropdowns_enhancement/master/dist/js/dropdowns-enhancement.js 
+$ curl -sLO https://raw.githubusercontent.com/behigh/bootstrap_dropdowns_enhancement/master/dist/css/dropdowns-enhancement.css
+```
+
+```html
+    <li class="dropdown-submenu">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown</a>
+    <ul class="dropdown-menu">
+      <li><a href="#">sub menu1</a></li>
+      <li class="dropdown-submenu">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown">sub menu1</a>
+      <ul class="dropdown-menu">
+        <li class="dropdown-submenu">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">sub menu2</a>
+        <ul class="dropdown-menu">
+          <li><a href="#">sub menu3</a></li>
+          <li><a href="#">sub menu3</a></li>
+          <li><a href="#">sub menu3</a></li>
+        </ul>
+        </li>
+      </ul>
+      </li>
+    </ul>
+    </li>
+```
+
+[Dropdown Menus Enhancement](behigh.github.io/bootstrap_dropdowns_enhancement/)
+
 ## Annotations
 
 Thanks to [Steve Francia](//github.com/spf13) for creating Hugo and the awesome community around the project.

@@ -63,4 +63,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 }
 
-
+.dropdown-submenu > .dropdown-menu {
+    background-color: #333;
+}
