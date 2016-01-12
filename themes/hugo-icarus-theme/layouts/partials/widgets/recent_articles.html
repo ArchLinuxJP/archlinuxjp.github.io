@@ -4,7 +4,8 @@
     <div class="widget">
         <ul id="recent-post">
 		<li id="first-recent"><a href="sitemap.xml" id="firstmove" class="move"><h3 class="widget-title">
-        {{with .Site.Data.l10n.widgets.recent_articles.title}}{{.}}{{end}}
+					最新の記事
+					<!--{{with .Site.Data.l10n.widgets.recent_articles.title}}{{.}}{{end}} -->
     </h3></a></li>
             {{ range first 10 (where .Site.Pages "Type" "post") }}
 	    <li>

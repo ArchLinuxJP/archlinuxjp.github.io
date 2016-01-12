@@ -148,3 +148,15 @@ a.navbar-brand span.site-title-linux {
 	position:relative;
 }
 
+.widget-download {
+	margin-top:30px;
+}
+
+.fa-arrow-circle-o-down:hover {
+	-webkit-transition: 0.3s ease-in-out;
+	-moz-transition: 0.3s ease-in-out;
+	-o-transition: 0.3s ease-in-out;
+	transition: 0.3s ease-in-out;
+	color: #1794D1;
+}
+
