@@ -80,7 +80,7 @@ td {
 body {
   line-height: 1;
   color: #000;
-  background: #fff;
+  background: #F6F9FC !important;
 }
 ol,
 ul {
