@@ -9,12 +9,13 @@
 .navbar-brand span.icon-archlinuxjp {
 	font-size: 45px;
 	position: absolute;
-	color: #38B7EA;
+	color: #1793D1;
 }
 
 .navbar-brand span.site-title {
 	position: absolute;
 	padding-left: 5px;
+	color: #fff;
 }
 
 .navbar-brand span.icon-archlinuxjp-simple {
@@ -23,13 +24,14 @@
 	position:relative;
 }
 
-.navbar-brand span.icon-archlinux-font-arch {
-	font-size: 38px;
+.nav.navbar-nav.navbar-right li span.icon-archlinux-font-arch {
+	padding-left: 5px;
+	font-size: 45px;
 	color: #fff;
 }
 
-.navbar-brand span.icon-archlinux-font-linux {
-	font-size: 38px;
+.nav.navbar-nav.navbar-right li a span.icon-archlinux-font-linux {
+	font-size: 45px;
 	color: #1794D1;
 }
 
@@ -78,7 +80,7 @@ h1 a:hover span.icon-archlinuxjp-simple {
 }
 /* font-awesome */
 .fa-rss {
-	color: #FF5500;
+	color: #FF7B39;
 }
 
 .fa-rss:hover {
@@ -90,7 +92,7 @@ h1 a:hover span.icon-archlinuxjp-simple {
 }
 
 .fa-rss-square {
-	color: #FF5500;
+	color: #FF7B39;
 }
 .fa-rss-square:hover {
 	-webkit-transition: 0.3s ease-in-out;
@@ -98,6 +100,9 @@ h1 a:hover span.icon-archlinuxjp-simple {
 	-o-transition: 0.3s ease-in-out;
 	transition: 0.3s ease-in-out;
 	color: #07b;
+}
+.rss-right {
+  text-align: right;
 }
 
 .fa-bars:hover {
@@ -118,10 +123,21 @@ h1 a:hover span.icon-archlinuxjp-simple {
 
 }
 
-a.navbar-brand span.site-title {
+a.navbar-brand span.site-title-arch {
+	position: absolute;
+	padding-left:5px;
+	font-size:35px;
 	color: #fff;
+	font-weight: 500;
 }
-
+a.navbar-brand span.site-title-linux {
+	position: absolute;
+	padding-left:76px;
+	font-size:38px;
+	color: #fff;
+	color: #1793D1;
+	font-weight: 200;
+}
 #header a, #header a:visited {
 	color: #fff;
 	position:relative;

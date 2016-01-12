@@ -20,6 +20,8 @@ $ hugo
 
 # preview
 $ hugo server
+------------------------
+$ curl -sL localhost:1313
 ```
 
 Now enter [`localhost:1313`](//localhost:1313) in the address bar of your browser.
@@ -32,19 +34,20 @@ $ hugo new `date +"%Y-%m-%d"`-hello.md
 
 > content/post/2015-12-13-hello.md 
 
-```
+```md
 +++
-banner = "banners/archlinux.png"
 categories = ["News"]
 date = "2015-12-13"
 menu = ""
 tags = ["community","archlinux"]
-title = "ArchLinuxJPのコミュニティをSlackで作ってみた"
+title = "Hello World !"
 slug = "hello-world-archlinuxjp"
 +++
 
 <!--more-->
 ```
+
+
 
 ## サイトの更新
 
@@ -58,7 +61,7 @@ $ git push -u origin source
 
 > wercker.yml
 
-```
+```yml
 box: wercker/default
 build:
     steps:
@@ -75,7 +78,7 @@ deploy:
         name: Configure git
         code: |-
           git config --global user.email "${MAIL_ADDRESS}"
-          git config --global user.name "syui"
+          git config --global user.name "archlinuxjp"
           rm -rf .git
     - script:
         name: Deploy to github pages
@@ -107,6 +110,20 @@ $ tree .
     config.toml
 ```
 
+## Jekyll
+
+`hugo server`と結果が異なることがあります。より確実にプレビューする場合は、`jekyll`を使用してください。
+
+```bash
+$ hugo
+
+$ cd ./public
+
+$ jekyll serve
+------------------------
+$ curl -sL localhost:4000
+```
+
 ## Icon Font
 
 ### IcoMoon
@@ -118,50 +135,23 @@ docs : [https://icomoon.io/#docs](https://icomoon.io/#docs)
 > themes/hugo-icarus-theme/layouts/partials/head.html
 
 ```html
-<link rel="stylesheet" href="{{ .Site.BaseURL }}css/icomoon/style.css">
+<link rel="stylesheet" href="{{ .Site.BaseURL }}font/icomoon/css/icomoon.css">
 ```
 
-```
-$ git clone https://github.com/ArchLinuxJP/archimg-jp
-$ cp -rf archimg-jp/font/icomoon ./themes/hugo-icarus-theme/static/css
-```
+### FontAwesome
 
-CSSのエフェクト例は、以下のコードを参考にしてください。
-
-```css
-span.icon-archlinuxjp:hover {
-  color:#38b7ea;
-}
-
-/* マウスオーバーでロゴ全体を光らせるようにする */
-a#logo:hover span.icon-archlinuxjp {
-  -webkit-transition: 0.3s ease-in-out;
-  -moz-transition: 0.3s ease-in-out;
-  -o-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
-  color:#38b7ea;
-}
-
-/* メニューでのフォントのサイズを変更する */
-div#header-main span.icon-archlinuxjp {
-    font-size: 44px;
-}
-```
-
-### Font Awesome
-
-基本的に、各種アイコンは、画像ではなくアイコンフォントで表現します。このため、[Font Awesome](https://github.com/FortAwesome/Font-Awesome)を使います。
+基本的に、各種アイコンは、画像ではなくアイコンフォントで表現します。このため、[FontAwesome](https://github.com/FortAwesome/Font-Awesome)を使います。
 
 docs : [https://fortawesome.github.io/Font-Awesome/get-started](https://fortawesome.github.io/Font-Awesome/get-started)
 
 > themes/hugo-icarus-theme/layouts/partials/head.html
 
 ```html
-<link rel="stylesheet" href="{{ .Site.BaseURL }}css/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="{{ .Site.BaseURL }}font/font-awesome/css/font-awesome.min.css">
 ```
 
 ```
-$ git clone https://github.com/FortAwesome/Font-Awesome ./themes/hugo-icarus-theme/static/css/font-awesome
+$ git clone https://github.com/FortAwesome/Font-Awesome ./themes/hugo-icarus-theme/static/font/font-awesome
 ```
 
 ```css
@@ -174,7 +164,7 @@ $ git clone https://github.com/FortAwesome/Font-Awesome ./themes/hugo-icarus-the
 }
 ```
 
-## Bootstrap Navbar
+## Bootstrap
 
 メニューバーは、[Bootstrap](http://getbootstrap.com/)のテンプレートを利用すると、簡単に作成できます。モバイルにも対応できるので、便利です。
 
