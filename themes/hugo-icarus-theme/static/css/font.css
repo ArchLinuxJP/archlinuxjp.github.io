@@ -9,7 +9,7 @@
 .navbar-brand span.icon-archlinuxjp {
 	font-size: 40px;
 	position: absolute;
-	color: #1793D1;
+	color: #444;
 }
 
 .navbar-brand span.site-title {
@@ -126,7 +126,7 @@ h1 a:hover span.icon-archlinuxjp-simple {
 a.navbar-brand span.site-title-arch {
 	position: absolute;
 	padding-left:5px;
-	font-size:35px;
+	font-size:18px;
 	color: #fff;
 	font-weight: 500;
 }
