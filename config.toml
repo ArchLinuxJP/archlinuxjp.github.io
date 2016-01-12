@@ -86,3 +86,4 @@ theme = "hugo-icarus-theme"
     categories = true
     tags = true
     tag_cloud = true
+

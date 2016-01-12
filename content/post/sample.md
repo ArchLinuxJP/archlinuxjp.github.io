@@ -7,8 +7,6 @@ title = "Creating a new theme"
 slug = "sample"
 +++
 
-<!--more-->
-
 ## Some Definitions
 
 There are a few concepts that you need to understand before creating a theme.

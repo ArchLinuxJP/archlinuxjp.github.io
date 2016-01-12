@@ -2,18 +2,7 @@
     <div class="archive-article-inner">
 
         <div class="archive-article-thumbnail">
-        <div class="article-first-inp">
-		<h2>
-			シンプル、軽量なディストリビューション
-		</h2>
-		<p>
-Arch Linux のウェブサイトにようこそ。Keep It Simple を標榜する、軽量で柔軟性に優れた Linux® ディストリビューションです。
 
-公式パッケージは i686 と x86-64 アーキテクチャに最適化されています。さらに公式パッケージを補足するものとしてコミュニティによって運営されているパッケージリポジトリがあり、日々、その質量ともに成長しています。
-
-Arch Linux の強固なコミュニティは多様かつ助けになり、広範なスキルセットと、それによって Arch を利用していることに誇りを持っています。フォーラムやメーリングリストを見て参加してみて下さい。Slack で Arch ユーザーと会話することもできます (誰でも自由に参加できます)。また、Arch について知識を深めたいと考えたのであれば、ArchWiki も覗いてみましょう。
-		</p>
-	</div>
             {{ if isset .Params "banner" }}
             <a href="{{ .Permalink }}" class="thumbnail">
                 <span style="background-image:url({{ .Site.BaseURL }}{{ .Params.banner }})" alt="{{ .Title }}" class="thumbnail-image"></span>
@@ -29,7 +18,7 @@ Arch Linux の強固なコミュニティは多様かつ助けになり、広範
             <a class="archive-article-title" href="{{ .Permalink }}">{{ .Title }}</a>
             </h1>
             <div class="archive-article-date">
-                <i class="fa fa-calendar"></i>
+		    <!--<i class="fa fa-calendar"></i>-->
                 <time datetime="{{ .Date }}" itemprop="datePublished">{{ .Date.Format .Site.Params.date_format }}</time>
             </div>
         </header>

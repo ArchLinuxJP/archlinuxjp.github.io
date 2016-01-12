@@ -15,15 +15,16 @@
             {{ partial "article_header" . }}
             <div class="article-entry" itemprop="articleBody">
                 <p>
-                    {{ .Summary }}
+                    {{ .Summary }} ...
                 </p>
-		<!--
                 <p class="article-more-link">
                     <a href="{{ .Permalink }}">
+			    続きを読む
+			    <!--
                         {{with .Site.Data.l10n.articles.read_more}}{{.}}{{end}}
+			-->
                     </a>
                 </p>
-		-->
             </div>
 	    <!--
             {{ partial "article_footer" . }}

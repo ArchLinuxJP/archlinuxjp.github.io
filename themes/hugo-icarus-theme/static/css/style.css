@@ -817,9 +817,11 @@ a:visited {
 .article-category .fa-angle-right {
   margin: 0 5px;
 }
+
 .article-header {
-  padding: 20px 20px 0;
+  padding: 5px 5px 0;
 }
+
 .article-header .article-title {
   display: block;
   margin-bottom: 14px;
@@ -843,9 +845,9 @@ a:visited {
 }
 .article-entry {
   color: #565a5f;
-  padding: 0 20px;
+  /* padding: 0 20px; */
+  /* padding-top: 20px; */
   line-height: 1.6em;
-  padding-top: 20px;
 }
 .article-entry:before,
 .article-entry:after {
@@ -977,7 +979,7 @@ a:visited {
   padding: 6px 15px;
   -webkit-border-radius: 0px;
   border-radius: 0px;
-  background: #f5f8f9;
+  background: #F2EDED;
   color: #999;
   text-shadow: 0 1px #fff;
   text-decoration: none;
@@ -1335,7 +1337,7 @@ a:visited {
   }
 }
 .archive-article-header {
-  padding: 10px;
+  /* padding: 10px; */
 }
 .archive-article-title {
   font-size: 1.2em;
@@ -1696,7 +1698,7 @@ pre .javascript .function {
   margin-bottom: 0;
 }
 .widget {
-  padding: 15px 5px;
+  padding: 15px 0px;
 }
 .widget a {
   color: #777;
@@ -1989,6 +1991,7 @@ h1.article-title {
     margin-top: 7px !important;
 }
 
+/*
 h1.article-title {
     padding-left: 15px;
     padding-right: 15px;
@@ -1998,11 +2001,11 @@ h1.article-title {
     padding-left: 15px;
     padding-right: 15px;
 }
-
-.article-meta .article-date, .article-meta .article-category {
+.article-category {
     padding-left: 15px;
     padding-right: 15px;
 }
+*/
 
 pre {
     border-radius: 0px !important;
@@ -2029,5 +2032,63 @@ pre {
 }
 .rss-right{
 	margin:30px 10px 10px 10px;
-	font-size:20px;
+}
+
+.widget-title {
+    font-size: 1.3em;
+}
+
+#profile .inner, .article-inner, #comments, .archive-article, #toTop {
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.05);
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+time{
+	float:right;
+}
+
+.article-header .article-title {
+    font-size: 22px;
+}
+
+div#article-category .fa.fa-terminal {
+	background-color:#000;
+
+}
+
+.article-more-link {
+    float: right;
+}
+
+.archive-article-header h1 {
+	font-size:22px;
+}
+
+.archive-article {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+#profile .inner, .article-inner, #comments, #toTop {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.archive-article {
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+.archive-year-wrap, .archive-category-wrap, .archive-tag-wrap, .layout-title {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.article-entry p, .article-entry table {
+    margin: 0.5em 0px;
+}
+
+.article-entry {
+	padding-bottom: 15px;
 }
