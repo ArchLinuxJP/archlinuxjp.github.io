@@ -139,12 +139,12 @@ a.navbar-brand span.site-title-linux {
 	font-weight: 200;
 }
 #header a, #header a:visited {
-	color: #fff;
+	color: #999;
 	position:relative;
 }
 
 #header a:hover, #header a:hover {
-	color:#38b7ea;
+	color:#fff;
 	position:relative;
 }
 
