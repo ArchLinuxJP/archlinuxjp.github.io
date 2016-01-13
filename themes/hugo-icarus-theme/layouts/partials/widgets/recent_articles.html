@@ -9,15 +9,6 @@
     </h3></a></li>
             {{ range first 10 (where .Site.Pages "Type" "post") }}
 	    <li>
-                <div class="item-thumbnail">
-                    <a href="{{ .Permalink }}" class="thumbnail">
-                    {{ if isset .Params "banner" }}
-                        <span style="background-image:url({{ $.Site.BaseURL }}{{ .Params.banner }})" alt="{{ $.Title }}" class="thumbnail-image"></span>
-                    {{else}}
-                        <span class="thumbnail-image thumbnail-none"></span>
-                    {{ end }}
-		    </a>
-                </div>
 		<a href="{{ .Permalink }}" class="move">{{ .Title }}</a>
             </li>
             {{ end }}
