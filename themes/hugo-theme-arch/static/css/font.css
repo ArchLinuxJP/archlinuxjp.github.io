@@ -10,6 +10,10 @@
 	font-size: 40px;
 	position: absolute;
 	color: #1793D1;
+	-moz-text-shadow:0px 0px 1px black, 0 0 15px #38b7ea;
+	-webkit-text-shadow:0px 0px 1px black, 0 0 15px #38b7ea;
+	-o-text-shadow:0px 0px 1px black, 0 0 15px #38b7ea;
+	text-shadow:0px 0px 1px black, 0 0 15px #38b7ea;
 }
 
 .navbar-brand span.site-title {
@@ -53,10 +57,10 @@ h1 a:hover span.icon-archlinuxjp {
 	-moz-transition: 0.3s ease-in-out;
 	-o-transition: 0.3s ease-in-out;
 	transition: 0.3s ease-in-out;
-	-moz-text-shadow:0px 0px 1px black, 0 0 15px #38b7ea;
-	-webkit-text-shadow:0px 0px 1px black, 0 0 15px #38b7ea;
-	-o-text-shadow:0px 0px 1px black, 0 0 15px #38b7ea;
-	text-shadow:0px 0px 1px black, 0 0 15px #38b7ea;
+	-moz-text-shadow:0px 0px 1px black, 0 0 50px #38b7ea;
+	-webkit-text-shadow:0px 0px 1px black, 0 0 50px #38b7ea;
+	-o-text-shadow:0px 0px 1px black, 0 0 50px #38b7ea;
+	text-shadow:0px 0px 1px black, 0 0 50px #38b7ea;
 	color:#38b7ea;
 }
 
