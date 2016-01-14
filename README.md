@@ -1,7 +1,7 @@
 ```bash
 $ git clone https://github.com/archlinuxjp/archlinuxjp.github.io
 $ cd archlinuxjp.github.io
-$ git checkout soruce
+$ git checkout source
 
 # build & preview
 $ hugo server
