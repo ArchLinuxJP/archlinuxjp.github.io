@@ -3,13 +3,13 @@ build:
     steps:
         - arjen/hugo-build:
                 version: "0.14"
-                theme: hugo-icarus-theme
+                theme: hugo-theme-arch
                 flags: --buildDrafts=true
         - script:
             name: Configure git
             code: |-
               git config --global user.email "${MAIL_ADDRESS}"
-              git config --global user.name "syui"
+              git config --global user.name "archlinuxjp"
               rm -rf .git
         - script:
             name: Deploy to github pages
@@ -29,7 +29,7 @@ deploy:
         name: Configure git
         code: |-
           git config --global user.email "${MAIL_ADDRESS}"
-          git config --global user.name "syui"
+          git config --global user.name "archlinuxjp"
           rm -rf .git
     - script:
         name: Deploy to github pages

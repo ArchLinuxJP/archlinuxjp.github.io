@@ -7,7 +7,7 @@ disqusShortname = "archlinuxjp"
 googleAnalytics = ""
 # Define the number of posts per site
 paginate = 10
-theme = "hugo-icarus-theme"
+theme = "hugo-theme-arch"
 
 
 [permalinks]
@@ -17,7 +17,7 @@ theme = "hugo-icarus-theme"
     # Tell me who you're
     location = "Japan"
     site_description = ""
-    copyright  = "Powered by [Hugo](//gohugo.io). Theme by [hugo-icarus-theme](https://github.com/digitalcraftsman/hugo-icarus-theme)."
+    copyright  = "Powered by [Hugo](//gohugo.io). Theme by [hugo-theme-arch](https://github.com/syui/hugo-theme-arch)."
 
     # Format dates with Go's time formating
     date_format = "2006-01-02"
