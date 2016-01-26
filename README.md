@@ -32,7 +32,7 @@ Now enter [`localhost:1313`](//localhost:1313) in the address bar of your browse
 $ hugo new `date +"%Y-%m-%d"`-hello.md
 ```
 
-> content/post/2015-12-13-hello.md 
+> themes/hugo-theme-arch/static/content/post/2015-12-13-hello.md 
 
 ```md
 +++
@@ -260,6 +260,18 @@ $ curl -sLO https://raw.githubusercontent.com/behigh/bootstrap_dropdowns_enhance
 ```
 
 [Dropdown Menus Enhancement](behigh.github.io/bootstrap_dropdowns_enhancement/)
+
+
+## Commnet
+
+コメントシステムには、[Talaria](https://github.com/m2w/talaria)を使用しています。このシステムは、コミットログを参照するため、Markdownのファイル名やコミットに注意しなければなりません。コミットログを残すためにコミットログを一掃するデプロイは行いません。
+
+```html
+    <!-- talaria -->
+    <link href="{{ .Site.BaseURL }}bower_components/talaria/dist/talaria.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="{{ .Site.BaseURL }}bower_components/bluebird/js/browser/bluebird.js"></script>
+    <script type="text/javascript" src="{{ .Site.BaseURL }}bower_components/talaria/dist/talaria.js"></script>
+```
 
 ## Annotations
 
