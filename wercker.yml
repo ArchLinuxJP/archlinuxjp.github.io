@@ -17,9 +17,11 @@ build:
             name: Deploy to github pages
             code: |-
               cd ./public
+              git config --global user.email "${MAIL_ADDRESS}"
+              git config --global user.name "archlinuxjp"
               git add -A
               git commit -m "update"
-              git push
+              git push https://${GITHUB_TOKEN}@github.com/archlinuxjp/archlinuxjp.github.io.git master
     after-steps:
         - wantedly/pretty-slack-notify:
               webhook_url: $SLACK_WEBHOOK_URL
