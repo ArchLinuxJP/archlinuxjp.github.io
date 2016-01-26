@@ -6,15 +6,15 @@
     <description>Recent content in Community on Arch Linux JP Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Fri, 01 Jan 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 02 Jan 2016 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://archlinuxjp.github.io/tags/community/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Arch Linux JP コミュニティ</title>
-      <link>https://archlinuxjp.github.io/2016/01/01/slack</link>
-      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <link>https://archlinuxjp.github.io/2016/01/02/slack</link>
+      <pubDate>Sat, 02 Jan 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://archlinuxjp.github.io/2016/01/01/slack</guid>
+      <guid>https://archlinuxjp.github.io/2016/01/02/slack</guid>
       <description>&lt;p&gt;Arch Linux JP のコミュニティを&lt;code&gt;Slack&lt;/code&gt;で作成してみました。参加したい方は、以下の URL にアクセスしてください。&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;//archlinuxjp-slack.heroku.com/&#34;&gt;archlinuxjp-slack.heroku.com/&lt;/a&gt;&lt;/p&gt;
