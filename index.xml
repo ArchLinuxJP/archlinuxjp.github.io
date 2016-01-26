@@ -33,26 +33,6 @@
     </item>
     
     <item>
-      <title>Arch Linux JP コミュニティ</title>
-      <link>https://archlinuxjp.github.io/2016/01/01/slack</link>
-      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://archlinuxjp.github.io/2016/01/01/slack</guid>
-      <description>&lt;p&gt;Arch Linux JP のコミュニティを&lt;code&gt;Slack&lt;/code&gt;で作成してみました。参加したい方は、以下の URL にアクセスしてください。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;//archlinuxjp-slack.heroku.com/&#34;&gt;archlinuxjp-slack.heroku.com/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;//archlinuxjp-slack.heroku.com/&#34;&gt;&lt;img src=&#34;//archlinuxjp-slack.heroku.com/badge.svg&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;現時点では、Slack 上の明確なルールは設定していません。&lt;/p&gt;
-
-&lt;p&gt;問題が発生した場合は、できる限りその解決に努めますが、その一環としてルールや規則が定められることがあるかもしれません。&lt;/p&gt;
-
-&lt;p&gt;当該コミュニティの目的は、しいて言えば、ユーザー同士の問題解決ですが、基本的には各々が楽しんでいただければそれで良いと思っています。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Arch Linux JP ブログ</title>
       <link>https://archlinuxjp.github.io/2016/01/01/hugo</link>
       <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
@@ -71,6 +51,26 @@
 &lt;p&gt;外部からの寄稿やブログのレイアウトなどを変更するプルリクエストも受け付けています。&lt;/p&gt;
 
 &lt;p&gt;したがって、今後、このブログがどのように機能し、または、どのような役割を担っていくのかは、参加してくれる人達次第だとそう考えています。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Arch Linux JP コミュニティ</title>
+      <link>https://archlinuxjp.github.io/2016/01/01/slack</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://archlinuxjp.github.io/2016/01/01/slack</guid>
+      <description>&lt;p&gt;Arch Linux JP のコミュニティを&lt;code&gt;Slack&lt;/code&gt;で作成してみました。参加したい方は、以下の URL にアクセスしてください。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;//archlinuxjp-slack.heroku.com/&#34;&gt;archlinuxjp-slack.heroku.com/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;//archlinuxjp-slack.heroku.com/&#34;&gt;&lt;img src=&#34;//archlinuxjp-slack.heroku.com/badge.svg&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;現時点では、Slack 上の明確なルールは設定していません。&lt;/p&gt;
+
+&lt;p&gt;問題が発生した場合は、できる限りその解決に努めますが、その一環としてルールや規則が定められることがあるかもしれません。&lt;/p&gt;
+
+&lt;p&gt;当該コミュニティの目的は、しいて言えば、ユーザー同士の問題解決ですが、基本的には各々が楽しんでいただければそれで良いと思っています。&lt;/p&gt;
 </description>
     </item>
     
