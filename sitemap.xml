@@ -3,17 +3,22 @@
   
   <url>
     <loc>https://archlinuxjp.github.io/</loc>
-    <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    <lastmod>2016-01-26T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://archlinuxjp.github.io/2016/01/01/hugo</loc>
-    <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    <loc>https://archlinuxjp.github.io/2016/01/26/commnet</loc>
+    <lastmod>2016-01-26T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://archlinuxjp.github.io/2016/01/01/slack</loc>
+    <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://archlinuxjp.github.io/2016/01/01/hugo</loc>
     <lastmod>2016-01-01T00:00:00+00:00</lastmod>
   </url>
   
