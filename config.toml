@@ -3,7 +3,7 @@ languageCode = "ja-jp"
 title = "Arch Linux JP Blog"
 contentdir = "themes/hugo-theme-arch/static/content"
 # Enable comments by entering your Disqus shortname
-disqusShortname = "archlinuxjp"
+#disqusShortname = "archlinuxjp"
 # Enable Google Analytics by entering your tracking code
 googleAnalytics = ""
 # Define the number of posts per site
