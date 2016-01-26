@@ -11,10 +11,10 @@
     
     <item>
       <title>Arch Linux JP ブログのコメント</title>
-      <link>https://archlinuxjp.github.io/2016/01/26/commnet</link>
+      <link>https://archlinuxjp.github.io/2016/01/26/comment</link>
       <pubDate>Tue, 26 Jan 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://archlinuxjp.github.io/2016/01/26/commnet</guid>
+      <guid>https://archlinuxjp.github.io/2016/01/26/comment</guid>
       <description>&lt;p&gt;Arch Linux JP のブログにコメントを残せるようにしました。&lt;/p&gt;
 
 &lt;p&gt;コメントシステムには、&lt;code&gt;Disqus&lt;/code&gt;と&lt;code&gt;GitHub&lt;/code&gt;を採用しましたが、&lt;code&gt;Disqus&lt;/code&gt;はあまり好きではないので、非表示にしています。&lt;/p&gt;
