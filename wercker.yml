@@ -1,24 +1,25 @@
 box: wercker/default
 build:
     steps:
+        - script:
+            name: Configure git
+            code: |-
+              mkdir public
+              cp -rf .git public
+              cd public
+              git checkout master
+              cd ../
         - arjen/hugo-build:
                 version: "0.14"
                 theme: hugo-theme-arch
                 flags: --buildDrafts=true
         - script:
-            name: Configure git
-            code: |-
-              git config --global user.email "${MAIL_ADDRESS}"
-              git config --global user.name "archlinuxjp"
-              rm -rf .git
-        - script:
             name: Deploy to github pages
             code: |-
               cd ./public
-              git init
-              git add .
+              git add -A
               git commit -m "update"
-              git push -f https://${GITHUB_TOKEN}@github.com/archlinuxjp/archlinuxjp.github.io.git master
+              git push
     after-steps:
         - wantedly/pretty-slack-notify:
               webhook_url: $SLACK_WEBHOOK_URL
