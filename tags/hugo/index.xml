@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo on Arch Linux JP Blog</title>
+    <link>https://archlinuxjp.github.io/tags/hugo/</link>
+    <description>Recent content in Hugo on Arch Linux JP Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <lastBuildDate>Fri, 01 Jan 2016 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://archlinuxjp.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Arch Linux JP ブログ</title>
+      <link>https://archlinuxjp.github.io/2016/01/01/hugo</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://archlinuxjp.github.io/2016/01/01/hugo</guid>
+      <description>&lt;p&gt;Arch Linux JP のブログを作成してみました。リポジトリは以下になっております。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/ArchLinuxJP/archlinuxjp.github.io/tree/source&#34;&gt;https://github.com/ArchLinuxJP/archlinuxjp.github.io/tree/source&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;このブログは &lt;a href=&#34;https://github.com/archlinuxjp&#34;&gt;archlinuxjp@github&lt;/a&gt; のメンバーによる活動報告を主な目的にしています。&lt;/p&gt;
+
+&lt;p&gt;なぜなら、&lt;code&gt;Arch Linux JP&lt;/code&gt;として活動する以上、その活動がある程度、外部から公開されているほうが良いだろうという考えるからです。そのため、とりえずこのような場所を用意しました。&lt;/p&gt;
+
+&lt;p&gt;しかし、投稿する記事は、基本的に、活動した際に使った技術に関する事柄やTipsなど何を書いても構いませんし、また、どのような形式でも書いてもらっても構いません。&lt;/p&gt;
+
+&lt;p&gt;外部からの寄稿やブログのレイアウトなどを変更するプルリクエストも受け付けています。&lt;/p&gt;
+
+&lt;p&gt;したがって、今後、このブログがどのように機能し、または、どのような役割を担っていくのかは、参加してくれる人達次第だとそう考えています。&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
