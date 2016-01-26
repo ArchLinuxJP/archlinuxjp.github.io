@@ -13,8 +13,13 @@
         </div>
 
         {{ partial "prev_next_post" . }}
+
     </article>
     <section id="comments">
+  <script type="text/javascript">
+   talaria.init({REPOSITORY_NAME: 'archlinuxjp.github.io',
+                 GITHUB_USERNAME: 'archlinuxjp'});
+  </script>
         <div id="disqus_thread">
             {{ template "_internal/disqus.html" . }}
         </div>

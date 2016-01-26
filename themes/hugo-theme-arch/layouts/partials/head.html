@@ -26,7 +26,8 @@
     {{ template "_internal/google_news.html" . }}
     {{ template "_internal/schema.html" . }}
     {{ template "_internal/twitter_cards.html" . }}
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="{{ .Site.BaseURL }}bower_components/jquery/dist/jquery-2.2.0.min.js "></script>
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>-->
     <script src="{{ .Site.BaseURL }}fancybox/jquery.fancybox.pack.js"></script>
     <script src="{{ .Site.BaseURL }}js/script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
@@ -45,12 +46,19 @@
     <script src="{{ .Site.BaseURL }}js/jquery.hotkeys.js "></script>
 
     <!-- bootstrap -->
-    <link rel="stylesheet" href="{{ .Site.BaseURL }}bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="{{ .Site.BaseURL }}bootstrap/css/dropdowns-enhancement.css">
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="{{ .Site.BaseURL }}bootstrap/js/bootstrap.min.js"></script>
-    <script src="{{ .Site.BaseURL }}bootstrap/js/dropdowns-enhancement.js"></script>
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}bower_components/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}bower_components/bootstrap/css/dropdowns-enhancement.css">
+    <script src="{{ .Site.BaseURL }}bower_components/bootstrap/js/bootstrap.min.js"></script>
+    <script src="{{ .Site.BaseURL }}bower_components/bootstrap/js/dropdowns-enhancement.js"></script>
     <link rel="stylesheet" href="{{ .Site.BaseURL }}css/bootstrap.css">
+
+    <!-- talaria -->
+    <link href="{{ .Site.BaseURL }}bower_components/talaria/dist/talaria.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="{{ .Site.BaseURL }}bower_components/bluebird/js/browser/bluebird.js"></script>
+    <script type="text/javascript" src="{{ .Site.BaseURL }}bower_components/talaria/dist/talaria.js"></script>
+
+    <!-- highlightjs -->
+    <!--<script src="{{ .Site.BaseURL }}bower_components/highlightjs/highlight.pack.min.js"></script>-->
 
 </head>
 <body>

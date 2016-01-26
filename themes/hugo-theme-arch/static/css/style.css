@@ -1947,10 +1947,11 @@ h1.article-title {
 	padding-bottom: 4px;
 }
 
+/*
 .header-inner {
 	border-bottom: solid 5px #428bca;
 }
-
+*/
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
 	border-color: #428bca !important;
 }
@@ -2053,3 +2054,14 @@ div#article-category .fa.fa-terminal {
     background-color: aliceblue;
 }
 
+.header-inner {
+    border-bottom: 5px solid #5DA5E3;
+}
+
+div.talaria-wrapper a > img {
+    width: 48px !important;
+}
+
+div.talaria-header h3 small {
+    font-size: 1.2rem !important;
+}
