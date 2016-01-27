@@ -53,7 +53,7 @@ theme = "hugo-theme-arch"
 # Add your social network accounts to the profile section on the left
 # by entering your username. The links to your account will be
 # create automatically.
-    github          = ""
+    github          = "archlinuxjp"
     bitbucket       = ""
     jsfiddle        = ""
     codepen         = ""
@@ -78,7 +78,7 @@ theme = "hugo-theme-arch"
     googleplus      = ""
     facebook        = ""
     facebook_admin  = ""
-    twitter_domain  = ""
+    twitter_domain  = "archlinux_jp"
     twitter         = "archlinux_jp"
 
 # Enable and disable widgets for the right sidebar
@@ -87,4 +87,7 @@ theme = "hugo-theme-arch"
     categories = true
     tags = true
     tag_cloud = true
+
+[articles]
+	share = true
 
