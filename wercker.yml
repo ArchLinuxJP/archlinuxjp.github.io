@@ -19,9 +19,6 @@ build:
               cd ./public
               git config --global user.email "${MAIL_ADDRESS}"
               git config --global user.name "archlinuxjp"
-              git add content
-              git commit -m "update:post"
-              git push -f https://${GITHUB_TOKEN}@github.com/archlinuxjp/archlinuxjp.github.io.git master
               git add -A
               git commit -m "update:web"
               git push https://${GITHUB_TOKEN}@github.com/archlinuxjp/archlinuxjp.github.io.git master
