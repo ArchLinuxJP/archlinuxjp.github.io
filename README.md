@@ -29,10 +29,10 @@ Now enter [`localhost:1313`](//localhost:1313) in the address bar of your browse
 ## 記事の作成
 
 ```bash
-$ hugo new `date +"%Y-%m-%d"`-hello.md
+$ hugo new `date +"%Y-%m-%d"`-hello-world.md
 ```
 
-> themes/hugo-theme-arch/static/content/post/2015-12-13-hello.md 
+> themes/hugo-theme-arch/static/content/post/2015-12-13-hello-world.md 
 
 ```md
 +++
@@ -41,13 +41,13 @@ date = "2015-12-13"
 menu = ""
 tags = ["community","archlinux"]
 title = "Hello World !"
-slug = "hello-world-archlinuxjp"
+slug = "hello-world"
 +++
 
 <!--more-->
 ```
 
-
+後述しますが、`slug`の部分は、URLの指定になります。これをファイル名と一致させないと、コメントシステムの`Talaria`が動作しませんので注意してください。
 
 ## サイトの更新
 
@@ -264,13 +264,31 @@ $ curl -sLO https://raw.githubusercontent.com/behigh/bootstrap_dropdowns_enhance
 
 ## Commnet
 
-コメントシステムには、[Talaria](https://github.com/m2w/talaria)を使用しています。このシステムは、コミットログを参照するため、Markdownのファイル名やコミットに注意しなければなりません。コミットログを残すためにコミットログを一掃するデプロイは行いません。
+コメントシステムには、[Talaria](https://github.com/m2w/talaria)を使用しています。このシステムは、コミットログを参照するため、Markdownのファイル名やURL、コミットに注意しなければなりません。コミットログを残すためにコミットログを一掃するデプロイは行いません。なお、ブランチは`master`のみに対応しています。
 
 ```html
-    <!-- talaria -->
-    <link href="{{ .Site.BaseURL }}bower_components/talaria/dist/talaria.css" rel="stylesheet" type="text/css">
-    <script type="text/javascript" src="{{ .Site.BaseURL }}bower_components/bluebird/js/browser/bluebird.js"></script>
-    <script type="text/javascript" src="{{ .Site.BaseURL }}bower_components/talaria/dist/talaria.js"></script>
+<!-- talaria -->
+<link href="{{ .Site.BaseURL }}bower_components/talaria/dist/talaria.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="{{ .Site.BaseURL }}bower_components/bluebird/js/browser/bluebird.js"></script>
+<script type="text/javascript" src="{{ .Site.BaseURL }}bower_components/talaria/dist/talaria.js"></script>
+```
+
+詳しい動作は以下のコードから推測してください。
+
+
+> bower_components/talaria/dist/talaria.js
+
+```js
+var CONFIG = {},
+    DEFAULTS = {
+        COMMENTABLE_CONTENT_PATH_PREFIX: 'content/post/',
+        CONTENT_SUFFIX: '.md',
+        CACHE_TIMEOUT: 60 * 60 * 1000, // cache github data for 1 hour
+        PAGINATION_SCHEME: /\/post\d+\//,
+        LOCAL_STORAGE_SUPPORTED: true,
+        PERMALINK_IDENTIFIER: 'a.permalink',
+        PERMALINK_STYLE: /[\.\w\-_:\/]+\/(\d+)\/(\d+)\/(\d+)\/([\w\-\.]+)$/
+    };
 ```
 
 ## Annotations
