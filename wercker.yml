@@ -16,6 +16,11 @@ build:
         - script:
             name: Deploy to github pages
             code: |-
+              cd ./bin
+              ./comment-touch.sh
+              cd ../archlinuxjp.github.io-comment
+              git push https://${GITHUB_TOKEN}@github.com/archlinuxjp/archlinuxjp.github.io-comment.git
+              cd ../
               cd ./public
               git config --global user.email "${MAIL_ADDRESS}"
               git config --global user.name "archlinuxjp"
