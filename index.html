@@ -213,6 +213,63 @@
 	    <div class="article-inner">
 
             <header class="article-header">
+    <a href="https://archlinuxjp.github.io/2016/03/02/comment" class="permalink">
+
+    <h1 class="article-title" itemprop="name">
+        Arch Linux JPのSlackで自己紹介を呼び出せるようにするには
+    </h1>
+    </a>
+	<time datetime="2016-03-02 00:00:00 &#43;0000 UTC" itemprop="datePublished">2016-03-02</time>
+	
+    <div class="article-meta">
+
+        
+        
+        <div class="article-category">
+            <i class="fa fa-folder"></i>
+            
+            <a class="article-category-link" href="https://archlinuxjp.github.io/categories/archlinuxjp">archlinuxjp</a>
+            
+            
+        </div>
+        
+        
+        
+        <div class="article-category">
+		<i class="fa fa-chevron-right"></i>
+		
+            
+            <a class="article-category-link" href="https://archlinuxjp.github.io/tags/blog">blog</a>
+            , 
+            
+            <a class="article-category-link" href="https://archlinuxjp.github.io/tags/hugo">hugo</a>
+            
+            
+        </div>
+        
+    </div>
+</header>
+
+            <div class="article-entry" itemprop="articleBody">
+                <p>
+                    Botで呼び出せる自己紹介を追加するには、以下のリポジトリにPRしてください。形式は自由です。 https://github.com/ArchLinuxJP/archlinuxjp-hubot 以下、サンプルコードを表示します。 file : scripts/hubot-member.coffee $ git clone https://github.com/ArchLinuxJP/archlinuxjp-hubot $ cd archlinuxjp-hubot $ vim scripts/hubot-member.coffee module.exports = (robot) -&gt; robot.respond /@user/i, (msg) -&gt; img_url = &quot;https://avatars3.githubusercontent.com/u/1867108&quot; user_name = &quot;user : syui&quot; user_profile = &quot; blog : https://syui.github.io \ngithub : https://github.com/syui \nqiita : https://qiita.com/syui \ntwitter : https://twitter.com/syui__&quot; msg.send &quot;#{img_url}\n#{user_name}\n\n&quot; ,&quot;#{user_profile}&quot; これでSlackにて、@hellobot @userで自己紹介が呼び出せるようになります。 ...
+                </p>
+                <p class="article-more-link">
+                    <a href="https://archlinuxjp.github.io/2016/03/02/comment">
+			    続きを読む
+			    
+                    </a>
+                </p>
+            </div>
+	    
+        </div>
+    </article>
+    
+    <article class="article article-type-post" itemscope="" itemprop="blogPost">
+
+	    <div class="article-inner">
+
+            <header class="article-header">
     <a href="https://archlinuxjp.github.io/2016/01/26/comment" class="permalink">
 
     <h1 class="article-title" itemprop="name">
@@ -399,6 +456,10 @@
     </h3></a></li>
             
 	    <li>
+		<a href="https://archlinuxjp.github.io/2016/03/02/comment" class="move">Arch Linux JPのSlackで自己紹介を呼び出せるようにするには</a>
+            </li>
+            
+	    <li>
 		<a href="https://archlinuxjp.github.io/2016/01/26/comment" class="move">Arch Linux JP ブログのコメント</a>
             </li>
             
@@ -427,7 +488,7 @@
                 <a class="category-list-link" href="https://archlinuxjp.github.io/categories/archlinuxjp">
                     archlinuxjp
                 </a>
-                <span class="category-list-count">3</span>
+                <span class="category-list-count">4</span>
             </li>
             
         </ul>

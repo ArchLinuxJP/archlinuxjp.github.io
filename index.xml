@@ -6,8 +6,44 @@
     <description>Recent content on Arch Linux JP Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Tue, 26 Jan 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 02 Mar 2016 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://archlinuxjp.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Arch Linux JPのSlackで自己紹介を呼び出せるようにするには</title>
+      <link>https://archlinuxjp.github.io/2016/03/02/comment</link>
+      <pubDate>Wed, 02 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://archlinuxjp.github.io/2016/03/02/comment</guid>
+      <description>&lt;p&gt;Botで呼び出せる自己紹介を追加するには、以下のリポジトリにPRしてください。形式は自由です。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/ArchLinuxJP/archlinuxjp-hubot&#34;&gt;https://github.com/ArchLinuxJP/archlinuxjp-hubot&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;以下、サンプルコードを表示します。&lt;/p&gt;
+
+&lt;p&gt;file : scripts/hubot-member.coffee&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ git clone https://github.com/ArchLinuxJP/archlinuxjp-hubot
+$ cd archlinuxjp-hubot
+$ vim scripts/hubot-member.coffee
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-coffeescript&#34;&gt;module.exports = (robot) -&amp;gt;
+   robot.respond /@user/i, (msg) -&amp;gt;
+     img_url = &amp;quot;https://avatars3.githubusercontent.com/u/1867108&amp;quot;
+     user_name = &amp;quot;user : syui&amp;quot;
+     user_profile = &amp;quot;
+     blog : https://syui.github.io
+     \ngithub : https://github.com/syui
+     \nqiita : https://qiita.com/syui
+     \ntwitter : https://twitter.com/syui__&amp;quot;
+     msg.send &amp;quot;#{img_url}\n#{user_name}\n\n&amp;quot;
+     ,&amp;quot;#{user_profile}&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;これでSlackにて、&lt;code&gt;@hellobot @user&lt;/code&gt;で自己紹介が呼び出せるようになります。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Arch Linux JP ブログのコメント</title>
