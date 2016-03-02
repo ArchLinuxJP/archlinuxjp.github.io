@@ -4,7 +4,7 @@ date = "2016-03-02"
 menu = ""
 tags = ["blog", "hugo"]
 title = "Arch Linux JPのSlackで自己紹介を呼び出せるようにするには"
-slug = "comment"
+slug = "slack-profile"
 +++
 
 Botで呼び出せる自己紹介を追加するには、以下のリポジトリにPRしてください。形式は自由です。

@@ -11,10 +11,10 @@
     
     <item>
       <title>Arch Linux JPのSlackで自己紹介を呼び出せるようにするには</title>
-      <link>https://archlinuxjp.github.io/2016/03/02/comment</link>
+      <link>https://archlinuxjp.github.io/2016/03/02/slack-profile</link>
       <pubDate>Wed, 02 Mar 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://archlinuxjp.github.io/2016/03/02/comment</guid>
+      <guid>https://archlinuxjp.github.io/2016/03/02/slack-profile</guid>
       <description>&lt;p&gt;Botで呼び出せる自己紹介を追加するには、以下のリポジトリにPRしてください。形式は自由です。&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://github.com/ArchLinuxJP/archlinuxjp-hubot&#34;&gt;https://github.com/ArchLinuxJP/archlinuxjp-hubot&lt;/a&gt;&lt;/p&gt;

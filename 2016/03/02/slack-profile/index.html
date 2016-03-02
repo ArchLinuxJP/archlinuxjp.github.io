@@ -2,15 +2,12 @@
 <html lang="ja-jp">
 <head>
     
-    <title>Community</title>
+    <title>Arch Linux JPのSlackで自己紹介を呼び出せるようにするには</title>
     <meta name="generator" content="Hugo 0.14" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
     
-    
-      <link href="https://archlinuxjp.github.io/tags/community/index.xml" rel="alternate" type="application/rss+xml" title="Arch Linux JP Blog" />
-      <link href="https://archlinuxjp.github.io/tags/community/index.xml" rel="feed" type="application/rss+xml" title="Arch Linux JP Blog" />
     
     <link rel="icon" href="https://archlinuxjp.github.io/favicon.ico">
     <link rel="apple-touch-icon" href="https://archlinuxjp.github.io/apple-touch-icon.png" />
@@ -22,29 +19,47 @@
     <link rel="stylesheet" href="https://archlinuxjp.github.io/css/font.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
-    <meta property="og:title" content="Community" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://archlinuxjp.github.io/tags/community/" />
+    <meta property="og:title" content="Arch Linux JPのSlackで自己紹介を呼び出せるようにするには" />
+<meta property="og:description" content="Botで呼び出せる自己紹介を追加するには、以下のリポジトリにPRしてください。形式は自由です。 https://github.com/ArchLinuxJP/archlinuxjp-hubot 以下、サンプルコードを表示します。 file : scripts/hubot-member.coffee $ git clone https://github.com/ArchLinuxJP/archlinuxjp-hubot $ cd archlinuxjp-hubot $ vim scripts/hubot-member.coffee module.exports = (robot) -&gt; robot.respond /@user/i, (msg) -&gt; img_url = &quot;https://avatars3.githubusercontent.com/u/1867108&quot; user_name = &quot;user : syui&quot; user_profile = &quot; blog : https://syui.github.io \ngithub : https://github.com/syui \nqiita : https://qiita.com/syui \ntwitter : https://twitter.com/syui__&quot; msg.send &quot;#{img_url}\n#{user_name}\n\n&quot; ,&quot;#{user_profile}&quot; これでSlackにて、@hellobot @userで自己紹介が呼び出せるようになります。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://archlinuxjp.github.io/2016/03/02/slack-profile" />
 
 
-<meta property="og:updated_time" content="2016-01-02T00:00:00&#43;00:00"/>
-
-
-
+<meta property="og:updated_time" content="2016-03-02T00:00:00&#43;00:00"/>
 
 
 
 
 
 
-    
-    
-<meta itemprop="name" content="Community">
-<meta itemprop="description" content="">
+
+
 
 
     
+    
+<meta itemprop="name" content="Arch Linux JPのSlackで自己紹介を呼び出せるようにするには">
+<meta itemprop="description" content="Botで呼び出せる自己紹介を追加するには、以下のリポジトリにPRしてください。形式は自由です。 https://github.com/ArchLinuxJP/archlinuxjp-hubot 以下、サンプルコードを表示します。 file : scripts/hubot-member.coffee $ git clone https://github.com/ArchLinuxJP/archlinuxjp-hubot $ cd archlinuxjp-hubot $ vim scripts/hubot-member.coffee module.exports = (robot) -&gt; robot.respond /@user/i, (msg) -&gt; img_url = &quot;https://avatars3.githubusercontent.com/u/1867108&quot; user_name = &quot;user : syui&quot; user_profile = &quot; blog : https://syui.github.io \ngithub : https://github.com/syui \nqiita : https://qiita.com/syui \ntwitter : https://twitter.com/syui__&quot; msg.send &quot;#{img_url}\n#{user_name}\n\n&quot; ,&quot;#{user_profile}&quot; これでSlackにて、@hellobot @userで自己紹介が呼び出せるようになります。">
+
+
+<meta itemprop="dateModified" content="2016-03-02T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="52">
+
+
+
+<meta itemprop="keywords" content="archlinuxjp,blog,community,hugo,slack," />
+
+    
+
+  <meta name="twitter:card" content="summary"/>
+
+
+
+<meta name="twitter:title" content="Arch Linux JPのSlackで自己紹介を呼び出せるようにするには"/>
+<meta name="twitter:description" content="Botで呼び出せる自己紹介を追加するには、以下のリポジトリにPRしてください。形式は自由です。 https://github.com/ArchLinuxJP/archlinuxjp-hubot 以下、サンプルコードを表示します。 file : scripts/hubot-member.coffee $ git clone https://github.com/ArchLinuxJP/archlinuxjp-hubot $ cd archlinuxjp-hubot $ vim scripts/hubot-member.coffee module.exports = (robot) -&gt; robot.respond /@user/i, (msg) -&gt; img_url = &quot;https://avatars3.githubusercontent.com/u/1867108&quot; user_name = &quot;user : syui&quot; user_profile = &quot; blog : https://syui.github.io \ngithub : https://github.com/syui \nqiita : https://qiita.com/syui \ntwitter : https://twitter.com/syui__&quot; msg.send &quot;#{img_url}\n#{user_name}\n\n&quot; ,&quot;#{user_profile}&quot; これでSlackにて、@hellobot @userで自己紹介が呼び出せるようになります。"/>
+
+
+
     <script src="https://archlinuxjp.github.io/bower_components/jquery/dist/jquery-2.2.0.min.js "></script>
     
     <script src="https://archlinuxjp.github.io/fancybox/jquery.fancybox.pack.js"></script>
@@ -82,7 +97,8 @@
 </head>
 <body>
 <div class="container">
- <header id="header">
+
+<header id="header">
   <div id="header-main" class="header-inner">
     <div class="outer">
 	<nav class="navbar navbar-default">
@@ -198,38 +214,105 @@
 
 
 <div id="container">
-    <div class="outer">
-        <section id="main">
-            <section class="archives-wrap">
-                <div class="archive-category-wrap">
-                    <span class="archive-category">Community</span>
-                </div>
-                <div class="archives">
-                    
-                    
-                        <article class="archive-article archive-type-post">
-    <div class="archive-article-inner">
-        <header class="archive-article-header">
-            <h1 itemprop="name">
-            <a class="archive-article-title" href="https://archlinuxjp.github.io/2016/01/02/slack">Arch Linux JP コミュニティ</a>
-            </h1>
-            <div class="archive-article-date">
-		    
-                <time datetime="2016-01-02 00:00:00 &#43;0000 UTC" itemprop="datePublished">2016-01-02</time>
-            </div>
-        </header>
+   <div class="outer">
+    <section id="main">
+    <article id="page-undefined" class="article article-type-page" itemscope="" itemprop="blogPost">
+        <div class="article-inner">
+            
+
+            <header class="article-header">
+    <a href="https://archlinuxjp.github.io/2016/03/02/slack-profile" class="permalink">
+
+    <h1 class="article-title" itemprop="name">
+        Arch Linux JPのSlackで自己紹介を呼び出せるようにするには
+    </h1>
+    </a>
+	<time datetime="2016-03-02 00:00:00 &#43;0000 UTC" itemprop="datePublished">2016-03-02</time>
+	
+    <div class="article-meta">
+
+        
+        
+        <div class="article-category">
+            <i class="fa fa-folder"></i>
+            
+            <a class="article-category-link" href="https://archlinuxjp.github.io/categories/archlinuxjp">archlinuxjp</a>
+            
+            
+        </div>
+        
+        
+        
+        <div class="article-category">
+		<i class="fa fa-chevron-right"></i>
+		
+            
+            <a class="article-category-link" href="https://archlinuxjp.github.io/tags/blog">blog</a>
+            , 
+            
+            <a class="article-category-link" href="https://archlinuxjp.github.io/tags/hugo">hugo</a>
+            
+            
+        </div>
+        
     </div>
-</article>
- 
-                    
-                </div>
-            </section>
-            <nav id="page-nav">
+</header>
 
-</nav>
+            <div class="article-entry" itemprop="articleBody">
+                <p>Botで呼び出せる自己紹介を追加するには、以下のリポジトリにPRしてください。形式は自由です。</p>
 
-        </section>
-        <aside id="sidebar">
+<p><a href="https://github.com/ArchLinuxJP/archlinuxjp-hubot">https://github.com/ArchLinuxJP/archlinuxjp-hubot</a></p>
+
+<p>以下、サンプルコードを表示します。</p>
+
+<p>file : scripts/hubot-member.coffee</p>
+
+<pre><code class="language-bash">$ git clone https://github.com/ArchLinuxJP/archlinuxjp-hubot
+$ cd archlinuxjp-hubot
+$ vim scripts/hubot-member.coffee
+</code></pre>
+
+<pre><code class="language-coffeescript">module.exports = (robot) -&gt;
+   robot.respond /@user/i, (msg) -&gt;
+     img_url = &quot;https://avatars3.githubusercontent.com/u/1867108&quot;
+     user_name = &quot;user : syui&quot;
+     user_profile = &quot;
+     blog : https://syui.github.io
+     \ngithub : https://github.com/syui
+     \nqiita : https://qiita.com/syui
+     \ntwitter : https://twitter.com/syui__&quot;
+     msg.send &quot;#{img_url}\n#{user_name}\n\n&quot;
+     ,&quot;#{user_profile}&quot;
+</code></pre>
+
+<p>これでSlackにて、<code>@hellobot @user</code>で自己紹介が呼び出せるようになります。</p>
+
+            </div>
+            <footer class="article-footer">
+<a href="http://twitter.com/share?url=https%3a%2f%2farchlinuxjp.github.io%2f2016%2f03%2f02%2fslack-profile&text=Arch%20Linux%20JP%e3%81%aeSlack%e3%81%a7%e8%87%aa%e5%b7%b1%e7%b4%b9%e4%bb%8b%e3%82%92%e5%91%bc%e3%81%b3%e5%87%ba%e3%81%9b%e3%82%8b%e3%82%88%e3%81%86%e3%81%ab%e3%81%99%e3%82%8b%e3%81%ab%e3%81%af" target="_blank" title="Twitter" >
+	<span class="article-share-link">
+	    Share
+</span></a>
+    
+</footer>
+
+        </div>
+
+	
+
+    </article>
+    <section id="comments">
+  <script type="text/javascript">
+   talaria.init({REPOSITORY_NAME: 'archlinuxjp.github.io-comment',
+                 GITHUB_USERNAME: 'archlinuxjp'});
+  </script>
+        <div id="disqus_thread">
+            
+        </div>
+    </section>
+</section>
+
+    <aside id="sidebar">
     
 
 <div class="widget-wrap">
@@ -309,7 +392,7 @@
     
 </aside>
 
-    </div>
+</div>
 </div>
 
 <footer id="footer">
