@@ -7,7 +7,7 @@ var talaria = (function (P) {
      */
     var CONFIG = {},
         DEFAULTS = {
-            COMMENTABLE_CONTENT_PATH_PREFIX: 'content/post/',
+            COMMENTABLE_CONTENT_PATH_PREFIX: '_posts/',
             CONTENT_SUFFIX: '.md',
             CACHE_TIMEOUT: 60 * 60 * 1000, // cache github data for 1 hour
             PAGINATION_SCHEME: /\/post\d+\//,
