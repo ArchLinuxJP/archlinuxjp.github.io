@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>{{ site.title }}</title>
+    <meta name="description" content="cli web site">
+    <meta name="author" content="syui" />
+    <meta name="copyright" content="syui" />
+    <meta name="application-name" content="terminal" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="/bower_components/jquery.terminal/css/jquery.terminal.css">
+    <link rel="stylesheet" href="/bower_components/Ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" href="/bower_components/jquery.terminal/css/terminal.css">
+    <link rel="stylesheet" href="/bower_components/jquery.terminal/css/terminal.mobile.css">
+    <script src="/bower_components/bluebird/js/browser/bluebird.js"></script>
+    <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="/bower_components/jquery.terminal/js/jquery.terminal.min.js"></script>
+    <script src="/bower_components/jquery.terminal/js/origin.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div id="window">
+                <div id="toolbar">
+                    <div class="top">
+                        <div id="title">
+				<a href="{{ site.nossl.url }}">
+				</a>
+				Terminal
+                        </div>
+				<div id="title-left"> <a href="javascript:location.reload(true)"><i class="icon ion-plus-circled"></i></a> <i class="icon ion-minus-circled"></i> <a href="/#" target="_parent"><i class="icon ion-close-circled"></i></a> </div>
+                     </div>
+                </div>
+                <div id="terminal"></div>
+            </div>
+        </div>
+        <div class="row">
+        </div>
+    </div>
+    {{content}}
+</body>
