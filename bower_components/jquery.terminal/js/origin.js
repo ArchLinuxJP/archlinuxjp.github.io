@@ -127,7 +127,7 @@ $(function() {
         prompt: prompt,
         name: 'test',
         greetings: greetings,
-        height: 600,
+        height: 400,
         onInit: function(term) {
             term.insert("cat /json/link.json");
             term.history().clear();
