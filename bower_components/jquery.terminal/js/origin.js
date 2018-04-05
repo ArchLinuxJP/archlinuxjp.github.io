@@ -6,7 +6,7 @@ $(function() {
     var rsvp_url = "";
     var test_help = "Press [[b;#d33682;]<Tab>]";
 
-    axios.get('https://archlinuxjp.gitlab.io/json/link.json', { 'Content-Type': 'application/json' })
+    axios.get('https://archlinuxjp.github.io/json/link.json', { 'Content-Type': 'application/json' })
     .then(function (response) {
       archlinuxjp_link = JSON.stringify(response.data,null,"\t");
       console.log(archlinuxjp_link);
