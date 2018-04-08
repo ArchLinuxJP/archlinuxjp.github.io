@@ -9,6 +9,13 @@ $(function() {
     axios.get('https://archlinuxjp.github.io/json/link.json', { 'Content-Type': 'application/json' })
     .then(function (response) {
       archlinuxjp_link = JSON.stringify(response.data,null,"\t");
+      data = JSON.parse(archlinuxjp_link);
+      let url;
+      for(var i in data){
+	if (data[i].url) {
+		      archlinuxjp_link += "\n" + data[i].url + "\n";
+	}
+      };
       console.log(archlinuxjp_link);
       console.log(response);
     })
