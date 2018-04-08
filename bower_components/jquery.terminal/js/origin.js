@@ -26,6 +26,14 @@ $(function() {
     axios.get('https://api.github.com/orgs/archlinuxjp/public_members', { 'Content-Type': 'application/json' })
     .then(function (response) {
       archlinuxjp_member = JSON.stringify(response.data,null,"\t");
+      data = JSON.parse(archlinuxjp_member);
+      archlinuxjp_member = "";
+      let login,html_url;
+      for(var i in data){
+	if (data[i].login) {
+		      archlinuxjp_member += "\n" + data[i].login + "\n" + data[i].html_url + "\n";
+	}
+      };
       console.log(response);
     })
     .catch(function (error) {
