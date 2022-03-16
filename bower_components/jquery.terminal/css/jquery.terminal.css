@@ -125,25 +125,23 @@
 
 .terminal .terminal-output div div, .cmd .prompt {
     display: block;
-    line-height: 18px;
+    line-height: 14px;
     height: auto;
-    font-size: 14px;
 }
 .cmd .prompt {
     float: left;
 }
 .terminal, .cmd {
-    font-family: monospace;
-    /*font-family: FreeMono, monospace; this don't work on Android */
+    font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
     color: #aaa;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: #000;
     font-size: 14px;
-    line-height: 18px;
+    line-height: 16px;
     padding-bottom:3px;
 }
 .terminal-output > div {
     /*padding-top: 3px;*/
-    min-height: 16px;
+    min-height: 14px;
 }
 .terminal .terminal-output div span {
     display: inline-block;
@@ -249,5 +247,3 @@
 .terminal a:hover {
     color: red;
 }
-
-
