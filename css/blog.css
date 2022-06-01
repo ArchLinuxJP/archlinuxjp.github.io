@@ -62,3 +62,7 @@ span.prompt {
     -webkit-user-select: none;
     -ms-user-select: none;
 }
+
+ul.cp_list li img {
+    width: 20px;
+}

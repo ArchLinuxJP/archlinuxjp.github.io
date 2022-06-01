@@ -124,8 +124,8 @@ nav#article-nav {
 }
 
 ul {
-  list-style-type: none;
-  display: list-item;
+	list-style-type: none;
+	display: list-item;
 }
 
 ul.cp_list {
@@ -244,7 +244,7 @@ ins.adsbygoogle {
 }
 
 ul.cp_list li i.fas.fa-bars {
-    margin-bottom: 30px;
+	margin-bottom: 30px;
 }
 
 .footer-link > a > i.fab.fa-mastodon {
@@ -258,10 +258,14 @@ ul.cp_list li i.fas.fa-bars {
 
 
 ul.cp_list li img {
-    float: left;
-				padding:7px;
+	float: left;
+	padding:7px;
 }
 
 .navbar-nav span.icon-archlinuxjp {
 	font-size:40px;
+}
+
+ul.cp_list li img {
+    width: 20px;
 }
