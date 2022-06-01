@@ -1,0 +1,31 @@
+<div class="content-top">
+	<div id="blog-archives" class="category">
+		<div class="top-user">ニュース</div>
+		<ul class="cp_list">
+			{{ range $index,$value := first 5 (where $.Site.RegularPages.ByDate.Reverse "Section" "post") }}
+			<li>
+				<img src="https://github.com/{{ .Params.author }}.png"/><a href="https://github.com/{{ .Params.author }}">{{ .Params.author }}</a> / {{ .Date.Local.Format "2006-01-02" }}<p><a href="{{.Permalink}}">{{.Title}}</a></p>
+			</li>
+			{{ end }}
+		</ul>
+		<div class="top-user">説明</div>
+		<ul class="cp_list">
+			{{ range $index,$value := first 5 (where $.Site.RegularPages.ByDate.Reverse "Section" "archive") }}
+			<li>
+				<img src="https://github.com/{{ .Params.author }}.png"/><a href="https://github.com/{{ .Params.author }}">{{ .Params.author }}</a> / {{ .Date.Local.Format "2006-01-02" }}<p><a href="{{.Permalink}}">{{.Title}}</a></p>
+			</li>
+			{{ end }}
+		</ul>
+		<div class="top-user">環境</div>
+		<ul class="cp_list_user">
+			{{ range $index,$value := first 5 (where $.Site.RegularPages.ByDate.Reverse "Section" "user") }}
+			<li>
+				<p><img src="https://github.com/{{ .Params.author }}.png"/><a href="{{ .Permalink }}">{{ .Params.author }}</a></p>
+			</li>
+			{{ end }}
+		</ul>
+		<ul class="cp_list">
+			<li><p style="text-align:center;"><a href="/tags/"><i class="fas fa-bars"></i></a></p></li>
+		</ul>
+	</div>
+</div>

@@ -1,0 +1,10 @@
+{{ $s := path.Dir (.Permalink | relURL) }}
+{{ $o := index (split $s "/") 1 }}
+{{ if or (eq $o "user") (eq $o "post") (eq $o "archive") }}
+<body onload="highlight_prompt()">
+	{{ else }} 
+	<body>
+		{{ end }}
+		<div class="containerx">
+			<header id="header">
+			</header>
