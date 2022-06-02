@@ -39,9 +39,9 @@ content/archive/の内容はレビューされる可能性があります。こ�
 気軽に投稿してください。
 外部サービスの利用とリンク github.io, zeen, qiitaの外部リンクを利用できるようにしました。
 例えば、content/userにsyui.mdを置いたとして、以下の記述で対応できます。authorには外部サービスのusername(id)を指定してください。
-github.io : https://syui.github.io/`blog/post/2022/02/13/sway/`
-zeen : https://zenn.dev/syui/articles/`command-json-jq`
-qiita : https://qiita.com/syui/items/`22f4155f9b724ebac7ca`
+github.io : syui.github.io/ blog/post/2022/02/13/sway
+zeen : zenn.dev/syui/articles/ command-json-jq
+qiita : qiita.com/syui/items/ 22f4155f9b724ebac7ca
 content/user/syui.md
 +++ githubio = &amp;#34;blog/post/2022/02/13/sway/&amp;#34; qiita = &amp;#34;22f4155f9b724ebac7ca&amp;#34; zeen = &amp;#34;command-json-jq&amp;#34; author = &amp;#34;syui&amp;#34; +++ 外部サービスを利用する場合は、一つのリンクのみ有効となります。例えば、qiitaを利用する場合は下記の記述のみとなります。</description>
     </item>
