@@ -91,7 +91,35 @@
 <p>ただし、事情により許可を得ずにarchiveに追加される可能性もあるため、執筆の記述はこのリポジトリ内で再使用されることがあるという前提でお願いします。</p>
 <p><code>content/archive/</code>の内容はレビューされる可能性があります。これは、例えば、共同執筆の際の練習意図も含まれます。</p>
 <p>気軽に投稿してください。</p>
-
+<h3 id="外部サービスの利用とリンク">外部サービスの利用とリンク</h3>
+<p><code>github.io</code>, <code>zeen</code>, <code>qiita</code>の外部リンクを利用できるようにしました。</p>
+<p>例えば、<code>content/user</code>に<code>syui.md</code>を置いたとして、以下の記述で対応できます。authorには外部サービスの<code>username(id)</code>を指定してください。</p>
+<ul>
+<li>
+<p>github.io : <a href="https://syui.github.io/%60blog/post/2022/02/13/sway/%60">https://syui.github.io/`blog/post/2022/02/13/sway/`</a></p>
+</li>
+<li>
+<p>zeen : <a href="https://zenn.dev/syui/articles/%60command-json-jq%60">https://zenn.dev/syui/articles/`command-json-jq`</a></p>
+</li>
+<li>
+<p>qiita : <a href="https://qiita.com/syui/items/%6022f4155f9b724ebac7ca%60">https://qiita.com/syui/items/`22f4155f9b724ebac7ca`</a></p>
+</li>
+</ul>
+<blockquote>
+<p>content/user/syui.md</p>
+</blockquote>
+<pre tabindex="0"><code>+++
+githubio = &#34;blog/post/2022/02/13/sway/&#34;
+qiita = &#34;22f4155f9b724ebac7ca&#34;
+zeen = &#34;command-json-jq&#34;
+author = &#34;syui&#34;
++++
+</code></pre><p>外部サービスを利用する場合は、一つのリンクのみ有効となります。例えば、<code>qiita</code>を利用する場合は下記の記述のみとなります。</p>
+<pre tabindex="0"><code>+++
+qiita = &#34;22f4155f9b724ebac7ca&#34;
+author = &#34;syui&#34;
++++
+</code></pre>
 		
 
 

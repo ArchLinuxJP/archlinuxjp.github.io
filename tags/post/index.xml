@@ -36,7 +36,14 @@ content/post : コミュニティの最新情報などを追加
 なお、コントリビュータの誰かが共通項目として使える記述だと判断した場合、slackなどで執筆者に許可を得て追加していく方向で予定しています。
 ただし、事情により許可を得ずにarchiveに追加される可能性もあるため、執筆の記述はこのリポジトリ内で再使用されることがあるという前提でお願いします。
 content/archive/の内容はレビューされる可能性があります。これは、例えば、共同執筆の際の練習意図も含まれます。
-気軽に投稿してください。</description>
+気軽に投稿してください。
+外部サービスの利用とリンク github.io, zeen, qiitaの外部リンクを利用できるようにしました。
+例えば、content/userにsyui.mdを置いたとして、以下の記述で対応できます。authorには外部サービスのusername(id)を指定してください。
+github.io : https://syui.github.io/`blog/post/2022/02/13/sway/`
+zeen : https://zenn.dev/syui/articles/`command-json-jq`
+qiita : https://qiita.com/syui/items/`22f4155f9b724ebac7ca`
+content/user/syui.md
++++ githubio = &amp;#34;blog/post/2022/02/13/sway/&amp;#34; qiita = &amp;#34;22f4155f9b724ebac7ca&amp;#34; zeen = &amp;#34;command-json-jq&amp;#34; author = &amp;#34;syui&amp;#34; +++ 外部サービスを利用する場合は、一つのリンクのみ有効となります。例えば、qiitaを利用する場合は下記の記述のみとなります。</description>
     </item>
     
   </channel>
