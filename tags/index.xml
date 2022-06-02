@@ -7,13 +7,13 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>&amp;copy; 2019. All rights reserved.</copyright>
-    <lastBuildDate>Sat, 02 Jan 2016 00:00:00 +0000</lastBuildDate><atom:link href="https://archlinuxjp.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 02 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://archlinuxjp.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>archlinux</title>
-      <link>https://archlinuxjp.github.io/tags/archlinux/</link>
-      <pubDate>Sat, 02 Jan 2016 00:00:00 +0000</pubDate>
+      <title>post</title>
+      <link>https://archlinuxjp.github.io/tags/post/</link>
+      <pubDate>Thu, 02 Jun 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://archlinuxjp.github.io/tags/archlinux/</guid>
+      <guid>https://archlinuxjp.github.io/tags/post/</guid>
       <description></description>
     </item>
     
@@ -23,6 +23,15 @@
       <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
       
       <guid>https://archlinuxjp.github.io/tags/archive/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>user</title>
+      <link>https://archlinuxjp.github.io/tags/user/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://archlinuxjp.github.io/tags/user/</guid>
       <description></description>
     </item>
     

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>user on archlinuxjp</title>
+    <link>https://archlinuxjp.github.io/tags/user/</link>
+    <description>Recent content in user on archlinuxjp</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <copyright>&amp;copy; 2019. All rights reserved.</copyright>
+    <lastBuildDate>Fri, 01 Jan 2016 00:00:00 +0000</lastBuildDate><atom:link href="https://archlinuxjp.github.io/tags/user/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>個人的なarchlinuxのインストールと使い方</title>
+      <link>https://archlinuxjp.github.io/user/syui/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://archlinuxjp.github.io/user/syui/</guid>
+      <description>archlinuxとは シンプルなlinuxディストリビューションです。
+archlinuxのインストール $ pacstrap /mnt base linux </description>
+    </item>
+    
+  </channel>
+</rss>

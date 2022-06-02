@@ -149,6 +149,38 @@ ul.cp_list li > p > a {
 ul.cp_list li > span.icon-moon {
 	color: #0e0e0e;		
 }
+
+ul.cp_list li img {
+	padding-right:5px;
+	width: 17px;
+}
+
+ul.cp_list_user {
+	padding: 0;
+}
+
+ul.cp_list_user li {
+	padding: 0.5em 0.5em 0.6em 0.5em;
+	margin-bottom: 5px;
+	line-height: 1.5;
+	vertical-align: middle;
+	background: #fff;
+	border-radius: 0px 0px 0px 0px;
+	color: #444;
+}
+
+ul.cp_list_user li > p > a {
+	font-size:20px;	
+}
+
+ul.cp_list_user li > span.icon-moon {
+	color: #0e0e0e;		
+}
+
+ul.cp_list_user li img {
+	padding-right:5px;
+	width: 17px;
+}
 .footer-link > a > i.fab.fa-twitter {
 	color: rgba(52	135	236);		
 }
@@ -256,16 +288,8 @@ ul.cp_list li i.fas.fa-bars {
 	padding: 7px;
 }
 
-
-ul.cp_list li img {
-	float: left;
-	padding:7px;
-}
-
 .navbar-nav span.icon-archlinuxjp {
 	font-size:40px;
 }
 
-ul.cp_list li img {
-    width: 20px;
-}
+
