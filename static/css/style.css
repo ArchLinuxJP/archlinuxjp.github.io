@@ -292,4 +292,12 @@ ul.cp_list li i.fas.fa-bars {
 	font-size:40px;
 }
 
-
+i.fa-solid.fa-q {
+	color: #3aff3a;
+}
+i.fa-solid.fa-z {
+	color: #74ebff;
+}
+i.fa-brands.fa-github {
+	color: #444;
+}

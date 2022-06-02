@@ -2,30 +2,28 @@ baseurl = "https://archlinuxjp.github.io"
 languageCode = "ja-jp"
 title = "archlinuxjp"
 copyright = "&copy; 2019. All rights reserved."
-#canonifyurls = true
 paginate = 10000
 
 [permalinks]
-    post = "/post/:year/:month/:day/:slug"
-    archive = "/archive/:filename"
-				user = "/user/:filename"
+post = "/post/:year/:month/:day/:slug"
+archive = "/archive/:filename"
+user = "/user/:filename"
 
 [author]
-	name = "syui"
+name = "syui"
 
 [params]
-    date_format = "2006-01-02"
-    mainSections = ["post"]
+date_format = "2006-01-02"
+mainSections = ["post"]
 
 [markup.goldmark.renderer]
-  unsafe = true
+unsafe = true
 
 [frontmatter]
-	date  = [":filename", ":default"]
+date  = [":filename", ":default"]
 
 [taxonomies]
-	tag = "tags"
+tag = "tags"
 
 [outputs]
-  home = ["JSON", "HTML"]
-
+home = ["JSON", "HTML"]
