@@ -73,9 +73,7 @@ author = "syui"
 
 - qiita : qiita.com/syui/items/ `22f4155f9b724ebac7ca`
 
-> content/user/syui.md
-
-```
+```html:./content/user/syui.md
 +++
 githubio = "blog/post/2022/02/13/sway/"
 qiita = "22f4155f9b724ebac7ca"
@@ -86,7 +84,7 @@ author = "syui"
 
 外部サービスを利用する場合は、一つのリンクのみ有効となります。例えば、`qiita`を利用する場合は下記の記述のみとなります。
 
-```
+```html:./content/user/syui.md
 +++
 qiita = "22f4155f9b724ebac7ca"
 author = "syui"
