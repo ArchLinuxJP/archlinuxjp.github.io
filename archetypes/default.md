@@ -5,5 +5,8 @@ menu = ""
 image = ""
 usetoc = true
 slug = ""
+qiita = ""
+zeen = ""
+githubio = ""
 +++
 
