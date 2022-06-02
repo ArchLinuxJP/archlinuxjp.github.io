@@ -8,7 +8,6 @@
 		<h2>{{ .Title }}</h2>
 
 		{{ .Content }}
-		{{ partial "prev_next_post.html" . }}
 
 		{{ $taxo := "tags" }}
 		{{ with .Param $taxo }}
