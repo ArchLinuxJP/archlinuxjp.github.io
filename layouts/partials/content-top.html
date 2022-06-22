@@ -20,7 +20,9 @@
 		<ul class="cp_list_user">
 			{{ range $index,$value := first 100 (where $.Site.RegularPages.ByDate.Reverse "Section" "user") }}
 			<li>
-				{{ if and .Params.author .Params.githubio }}
+				{{ if and .Params.author .Params.github_alias }}
+				<p><i class="fa-brands fa-github"></i>  <a href="https://{{ .Params.author }}.github.io/{{ .Params.githubio }}">{{ .Params.github_alias }}</a></p>
+				{{ else if and .Params.author .Params.githubio }}
 				<p><i class="fa-brands fa-github"></i>  <a href="https://{{ .Params.author }}.github.io/{{ .Params.githubio }}">{{ .Params.author }}</a></p>
 				{{ else if and .Params.author .Params.zeen }}
 				<p><i class="fa-solid fa-z"></i>  <a href="https://zenn.dev/{{ .Params.author }}/articles/{{ .Params.zeen }}">{{ .Params.author }}</a></p>

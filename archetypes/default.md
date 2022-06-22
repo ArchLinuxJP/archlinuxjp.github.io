@@ -8,5 +8,6 @@ slug = ""
 qiita = ""
 zeen = ""
 githubio = ""
+github_alias = ""
 +++
 
