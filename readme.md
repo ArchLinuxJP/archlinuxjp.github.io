@@ -1,3 +1,20 @@
+### かんたん投稿
+
+以下の形式でpull-reqをお願いします。
+
+- ./content/user/syui-githubio.md
+
+- author : githubのusername
+
+- githubio : github.ioのurl (ex. $user.github.io `/blog/post/2022/02/13/sway` )
+
+```html:./content/user/syui-githubio.md
++++
+githubio = "blog/post/2022/02/13/sway/"
+author = "syui"
++++
+```
+
 ### archlinuxjp(blog)での執筆について
 
 誰でもarchlinuxjpのblogに投稿できます。
@@ -87,6 +104,23 @@ author = "syui"
 ```html:./content/user/syui.md
 +++
 qiita = "22f4155f9b724ebac7ca"
+author = "syui"
++++
+```
+
+```html:./content/user/syui-githubio.md
++++
+githubio = "blog/post/2022/02/13/sway/"
+author = "syui"
++++
+```
+
+まだテスト機能ですが、github.ioでの投稿のみ、表示名を`github_alias`で指定することができます。htmlは`<a href="https://{{ .Params.author }}.github.io/{{ .Params.githubio }}">{{ .Params.github_alias }}</a>`になります。
+
+```html:./content/user/syui-githubio.md
++++
+githubio = "blog/post/2022/02/13/sway/"
+github_alias = "viewer-name"
 author = "syui"
 +++
 ```
