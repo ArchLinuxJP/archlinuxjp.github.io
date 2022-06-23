@@ -29,15 +29,6 @@ archlinuxのインストール $ pacstrap /mnt base linux </description>
     
     <item>
       <title></title>
-      <link>https://archlinuxjp.github.io/user/syui-githubio/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://archlinuxjp.github.io/user/syui-githubio/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title></title>
       <link>https://archlinuxjp.github.io/user/yutkat-qiita/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
