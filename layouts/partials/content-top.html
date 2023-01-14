@@ -20,16 +20,24 @@
 		<ul class="cp_list_user">
 			{{ range $index,$value := first 100 (where $.Site.RegularPages.ByDate.Reverse "Section" "user") }}
 			<li>
-				{{ if and .Params.author .Params.github_alias }}
+				{{ if and .Params.author .Params.github_alias .Params.github }}
 				<p><i class="fa-brands fa-github"></i>  <a href="https://{{ .Params.author }}.github.io/{{ .Params.githubio }}">{{ .Params.github_alias }}</a></p>
-				{{ else if and .Params.author .Params.githubio }}
-				<p><i class="fa-brands fa-github"></i>  <a href="https://{{ .Params.author }}.github.io/{{ .Params.githubio }}">{{ .Params.author }}</a></p>
-				{{ else if and .Params.author .Params.zeen }}
+				<p>github/<a href="https://github.com/{{ .Params.author }}">{{ .Params.author }}</a></p>
+				{{ else if and .Params.author .Params.githubio .Params.github }}
+				<p><i class="fa-brands fa-github"></i>  <a href="https://{{ .Params.author }}.github.io/{{ .Params.githubio }}">{{ .Params.author }}</a><p>
+				<p>github/<a href="https://github.com/{{ .Params.author }}">{{ .Params.author }}</a></p>
+				{{ else if and .Params.author .Params.zeen .Params.github }}
 				<p><i class="fa-solid fa-z"></i>  <a href="https://zenn.dev/{{ .Params.author }}/articles/{{ .Params.zeen }}">{{ .Params.author }}</a></p>
-				{{ else if and .Params.author .Params.qiita }}
+				<p>github/<a href="https://github.com/{{ .Params.github }}">{{ .Params.github }}</a></p>
+				{{ else if and .Params.author .Params.qiita .Params.github }}
 				<p><i class="fa-solid fa-q"></i>  <a href="https://qiita.com/{{ .Params.author }}/items/{{ .Params.qiita }}">{{ .Params.author }}</a></p>
-				{{ else if .Params.author }}
+				<p>github/<a href="https://github.com/{{ .Params.github }}">{{ .Params.github }}</a></p>
+				{{ else if and .Params.author .Params.site .Params.github }}
+				<p><i class="fa-solid fa-globe"></i> <a href="https://{{ .Params.site }}">{{ .Params.author }}</a></p>
+				<p>github/<a href="https://github.com/{{ .Params.github }}">{{ .Params.github }}</a></p>
+				{{ else if and .Params.author .Params.github }}
 				<p><img src="https://github.com/{{ .Params.author }}.png"/><a href="{{ .Permalink }}">{{ .Params.author }}</a></p>
+				<p>github/<a href="https://github.com/{{ .Params.github }}">{{ .Params.github }}</a></p>
 			{{ end }}
 			</li>
 			{{ end }}

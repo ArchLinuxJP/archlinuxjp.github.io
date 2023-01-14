@@ -1,7 +1,7 @@
 baseurl = "https://archlinuxjp.github.io"
 languageCode = "ja-jp"
 title = "archlinuxjp"
-copyright = "&copy; 2019. All rights reserved."
+#copyright = "&copy; 2019. All rights reserved."
 paginate = 10000
 
 [permalinks]

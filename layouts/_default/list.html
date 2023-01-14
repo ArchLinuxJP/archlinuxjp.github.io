@@ -16,6 +16,8 @@
 					<p><i class="fa-solid fa-z"></i>  <a href="https://zenn.dev/{{ .Params.author }}/articles/{{ .Params.zeen }}">{{ .Params.author }}</a></p>
 					{{ else if and .Params.author .Params.qiita }}
 					<p><i class="fa-solid fa-q"></i>  <a href="https://qiita.com/{{ .Params.author }}/items/{{ .Params.qiita }}">{{ .Params.author }}</a></p>
+					{{ else if and .Params.author .Params.site }}
+					<p><i class="fa-brands fa-github"></i>  <a href="https://{{ .Params.site }}">{{ .Params.author }}</a></p>
 					{{ else if .Params.author }}
 					<p><img src="https://github.com/{{ .Params.author }}.png"/><a href="https://github.com/{{ .Params.author }}">{{ .Params.author }}</a> / {{ .Date.Local.Format "2006-01-02" }}</p>
 					<p><a href="{{.Permalink}}">{{ .Title }}</a></p>
