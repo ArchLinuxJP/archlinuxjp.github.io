@@ -1,4 +1,0 @@
-+++
-githubio = "posts/2021-05-20-sway/"
-author = "soracqt"
-+++
