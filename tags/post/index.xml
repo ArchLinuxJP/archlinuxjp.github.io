@@ -13,10 +13,13 @@
       <pubDate>Thu, 02 Jun 2022 00:00:00 +0000</pubDate>
       
       <guid>https://archlinuxjp.github.io/post/2022/06/02/readme/</guid>
-      <description>archlinuxjp(blog)での執筆について 誰でもarchlinuxjpのblogに投稿できます。
+      <description>archlinux関連の記事を集めています。気になる記事があれば追加してみてください。
+記事の追加 以下の形式でpull-reqしてください。blogにlinkが作成されます。
++++ site = &amp;#34;example.com/post/archlinux-first-commit/index.html&amp;#34; author = &amp;#34;xxx&amp;#34; github = &amp;#34;xxx&amp;#34; +++ 審査のためgithubのusernameは必要となります。
+blogへの執筆 誰でもarchlinuxjpのblogに投稿できます。
 現在、個人のarchlinux環境を紹介する記事の執筆を募集しています。
 募集方法は、こちらのリポジトリをforkして、pull-reqを送ります。投稿はcontent/user/にmarkdownで書きます。
-+++ date = &amp;#34;2016-01-01&amp;#34; tags = [&amp;#34;user&amp;#34;] title = &amp;#34;個人的なarchlinuxのインストールと使い方&amp;#34; author = &amp;#34;syui&amp;#34; +++  authorは執筆者のgithub(username)でお願いします
++++ date = &amp;#34;2016-01-01&amp;#34; tags = [&amp;#34;user&amp;#34;] title = &amp;#34;個人的なarchlinuxのインストールと使い方&amp;#34; author = &amp;#34;syui&amp;#34; github = &amp;#34;syui&amp;#34; +++  authorは執筆者のgithub(username)でお願いします
  投稿する内容はいたってシンプル、個人環境を自由に紹介するだけです。
 unixpornのようにデスクトップ画像を載せるだけでも構いません。
 概要 使用するディレクトリの紹介です。
@@ -30,16 +33,7 @@ unixpornのようにデスクトップ画像を載せるだけでも構いませ
 気軽に投稿してください。
 共通項目と記述の再利用 content/archive/には、archlinuxに関する共通の基礎項目(以下、共通項目)をまとめていく予定です。
 ここで言う共通項目とは、例えば、archlinuxとはなにかの説明だったり、AURの作り方を指します。
-これらは、content/user/に執筆記述されているものの中から使えると判断した記述を抜き出して追加していく予定です。
-もし執筆者自身が「これは共通項目として使えるな」と思った場合、content/archiveにも追加していってもらえるとうれしいです。
-なお、コントリビュータの誰かが共通項目として使える記述だと判断した場合、slackなどで執筆者に許可を得て追加していく方向で予定しています。
-ただし、事情により許可を得ずにarchiveに追加される可能性もあるため、執筆の記述はこのリポジトリ内で再使用されることがあるという前提でお願いします。
-content/archive/の内容はレビューされる可能性があります。これは、例えば、共同執筆の際の練習意図も含まれます。
-気軽に投稿してください。
-外部サービスの利用とリンク github.io, zeen, qiitaの外部リンクを利用できるようにしました。
-例えば、content/userにsyui.mdを置いたとして、以下の記述で対応できます。authorには外部サービスのusername(id)を指定してください。
-  github.io : syui.github.io/ blog/post/2022/02/13/sway
-  zeen : zenn.</description>
+これらは、content/user/に執筆記述されているものの中から使えると判断した記述を抜き出して追加していく予定です。</description>
     </item>
     
   </channel>

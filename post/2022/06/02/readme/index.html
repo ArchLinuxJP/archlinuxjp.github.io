@@ -44,11 +44,20 @@
 
 <article>
 	<div class="content">
-		
+		<div class="post-time-date">update : 2023-01-14</div>
 		<div class="post-time-date">2022-06-02 / <a href="https://github.com/syui">syui</a></div>
 		<h2>執筆者を募集します</h2>
 
-		<h3 id="archlinuxjpblogでの執筆について">archlinuxjp(blog)での執筆について</h3>
+		<p>archlinux関連の記事を集めています。気になる記事があれば追加してみてください。</p>
+<h3 id="記事の追加">記事の追加</h3>
+<p>以下の形式で<code>pull-req</code>してください。blogにlinkが作成されます。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html:./content/user/xxx.md" data-lang="html:./content/user/xxx.md">+++
+site = &#34;example.com/post/archlinux-first-commit/index.html&#34;
+author = &#34;xxx&#34;
+github = &#34;xxx&#34;
++++
+</code></pre></div><p>審査のためgithubのusernameは必要となります。</p>
+<h3 id="blogへの執筆">blogへの執筆</h3>
 <p>誰でもarchlinuxjpのblogに投稿できます。</p>
 <p>現在、個人のarchlinux環境を紹介する記事の執筆を募集しています。</p>
 <p>募集方法は、<a href="https://github.com/ArchLinuxJP/archlinuxjp.github.io">こちら</a>のリポジトリをforkして、pull-reqを送ります。投稿は<code>content/user/</code>にmarkdownで書きます。</p>
@@ -57,6 +66,7 @@ date = &#34;2016-01-01&#34;
 tags = [&#34;user&#34;]
 title = &#34;個人的なarchlinuxのインストールと使い方&#34;
 author = &#34;syui&#34;
+github = &#34;syui&#34;
 +++
 </code></pre></div><blockquote>
 <p><code>author</code>は執筆者のgithub(username)でお願いします</p>
@@ -104,17 +114,27 @@ author = &#34;syui&#34;
 <li>
 <p>qiita : qiita.com/syui/items/ <code>22f4155f9b724ebac7ca</code></p>
 </li>
+<li>
+<p>site : <code>example.com/test/index.html</code></p>
+</li>
 </ul>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html:./content/user/syui.md" data-lang="html:./content/user/syui.md">+++
 githubio = &#34;blog/post/2022/02/13/sway/&#34;
 qiita = &#34;22f4155f9b724ebac7ca&#34;
 zeen = &#34;command-json-jq&#34;
 author = &#34;syui&#34;
+github = &#34;syui&#34;
 +++
 </code></pre></div><p>外部サービスを利用する場合は、一つのリンクのみ有効となります。例えば、<code>qiita</code>を利用する場合は下記の記述のみとなります。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html:./content/user/syui.md" data-lang="html:./content/user/syui.md">+++
 qiita = &#34;22f4155f9b724ebac7ca&#34;
 author = &#34;syui&#34;
+github = &#34;syui&#34;
++++
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html:./content/user/syui.md" data-lang="html:./content/user/syui.md">+++
+site = &#34;example.com/post/archlinux-first-commit/&#34;
+author = &#34;syui&#34;
+github = &#34;syui&#34;
 +++
 </code></pre></div>
 
