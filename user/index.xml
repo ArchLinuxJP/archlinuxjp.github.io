@@ -5,24 +5,22 @@
     <link>https://archlinuxjp.github.io/user/</link>
     <description>Recent content in Users on archlinuxjp</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>ja-jp</language>
-    <lastBuildDate>Fri, 01 Jan 2016 00:00:00 +0000</lastBuildDate><atom:link href="https://archlinuxjp.github.io/user/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>個人的なarchlinuxのインストールと使い方</title>
-      <link>https://archlinuxjp.github.io/user/syui/</link>
-      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://archlinuxjp.github.io/user/syui/</guid>
-      <description>archlinuxとは シンプルなlinuxディストリビューションです。
-archlinuxのインストール $ pacstrap /mnt base linux </description>
-    </item>
-    
+    <language>ja-jp</language><atom:link href="https://archlinuxjp.github.io/user/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
       <link>https://archlinuxjp.github.io/user/kei/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://archlinuxjp.github.io/user/kei/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://archlinuxjp.github.io/user/syui/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://archlinuxjp.github.io/user/syui/</guid>
       <description></description>
     </item>
     

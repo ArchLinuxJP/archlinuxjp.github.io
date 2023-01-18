@@ -48,95 +48,14 @@
 		<div class="post-time-date">2022-06-02 / <a href="https://github.com/syui">syui</a></div>
 		<h2>執筆者を募集します</h2>
 
-		<p>archlinux関連の記事を集めています。気になる記事があれば追加してみてください。</p>
-<h3 id="記事の追加">記事の追加</h3>
-<p>以下の形式で<code>pull-req</code>してください。blogにlinkが作成されます。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html:./content/user/xxx.md" data-lang="html:./content/user/xxx.md">+++
+		<p>気になる記事があれば以下の形式で<code>pull-req</code>してください。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml:./content/user/xxx.md" data-lang="toml:./content/user/xxx.md">+++
 site = &#34;example.com/post/archlinux-first-commit/index.html&#34;
-author = &#34;xxx&#34;
-github = &#34;xxx&#34;
+author = &#34;name&#34;
+github = &#34;username&#34;
 +++
-</code></pre></div><p>審査のためgithubのusernameは必要となります。</p>
-<h3 id="blogへの執筆">blogへの執筆</h3>
-<p>誰でもarchlinuxjpのblogに投稿できます。</p>
-<p>現在、個人のarchlinux環境を紹介する記事の執筆を募集しています。</p>
-<p>募集方法は、<a href="https://github.com/ArchLinuxJP/archlinuxjp.github.io">こちら</a>のリポジトリをforkして、pull-reqを送ります。投稿は<code>content/user/</code>にmarkdownで書きます。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html:./content/user/syui.md" data-lang="html:./content/user/syui.md">+++
-date = &#34;2016-01-01&#34;
-tags = [&#34;user&#34;]
-title = &#34;個人的なarchlinuxのインストールと使い方&#34;
-author = &#34;syui&#34;
-github = &#34;syui&#34;
-+++
-</code></pre></div><blockquote>
-<p><code>author</code>は執筆者のgithub(username)でお願いします</p>
-</blockquote>
-<p>投稿する内容はいたってシンプル、個人環境を自由に紹介するだけです。</p>
-<p><a href="https://www.reddit.com/r/unixporn/">unixporn</a>のようにデスクトップ画像を載せるだけでも構いません。</p>
-<h3 id="概要">概要</h3>
-<p>使用するディレクトリの紹介です。</p>
-<ul>
-<li>
-<p><code>content/user</code> : コミュニティ参加者のarchlinux環境を紹介</p>
-</li>
-<li>
-<p><code>content/archive</code> : 共通項目に使える記述を追加(共同執筆)</p>
-</li>
-<li>
-<p><code>content/post</code> : コミュニティの最新情報などを追加</p>
-</li>
-</ul>
-<h3 id="目的と指針">目的と指針</h3>
-<p>コミュニティに参加する人たちが実際どのように(1)archlinuxをインストールして、(2)archlinuxを使っているのか、その具体例はとても参考になると考えています。</p>
-<p>また、このテーマは、読む側の興味を惹きつけるテーマだと考えます。</p>
-<p>したがって、主にこの2点、個人のarchlinuxのインストールと使い方を念頭に執筆してもらえるとうれしいです。</p>
-<p>このテーマについては、執筆者の個人負担や執筆のハードルを下げる意図も含まれます。</p>
-<p>気軽に投稿してください。</p>
-<h3 id="共通項目と記述の再利用">共通項目と記述の再利用</h3>
-<p><code>content/archive/</code>には、archlinuxに関する共通の基礎項目(以下、共通項目)をまとめていく予定です。</p>
-<p>ここで言う共通項目とは、例えば、<code>archlinuxとはなにか</code>の説明だったり、<code>AURの作り方</code>を指します。</p>
-<p>これらは、<code>content/user/</code>に執筆記述されているものの中から使えると判断した記述を抜き出して追加していく予定です。</p>
-<p>もし執筆者自身が「これは共通項目として使えるな」と思った場合、<code>content/archive</code>にも追加していってもらえるとうれしいです。</p>
-<p>なお、コントリビュータの誰かが共通項目として使える記述だと判断した場合、slackなどで執筆者に許可を得て追加していく方向で予定しています。</p>
-<p>ただし、事情により許可を得ずにarchiveに追加される可能性もあるため、執筆の記述はこのリポジトリ内で再使用されることがあるという前提でお願いします。</p>
-<p><code>content/archive/</code>の内容はレビューされる可能性があります。これは、例えば、共同執筆の際の練習意図も含まれます。</p>
-<p>気軽に投稿してください。</p>
-<h3 id="外部サービスの利用とリンク">外部サービスの利用とリンク</h3>
-<p><code>github.io</code>, <code>zeen</code>, <code>qiita</code>の外部リンクを利用できるようにしました。</p>
-<p>例えば、<code>content/user</code>に<code>syui.md</code>を置いたとして、以下の記述で対応できます。authorには外部サービスの<code>username(id)</code>を指定してください。</p>
-<ul>
-<li>
-<p>github.io : syui.github.io/ <code>blog/post/2022/02/13/sway</code></p>
-</li>
-<li>
-<p>zeen : zenn.dev/syui/articles/ <code>command-json-jq</code></p>
-</li>
-<li>
-<p>qiita : qiita.com/syui/items/ <code>22f4155f9b724ebac7ca</code></p>
-</li>
-<li>
-<p>site : <code>example.com/test/index.html</code></p>
-</li>
-</ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html:./content/user/syui.md" data-lang="html:./content/user/syui.md">+++
-githubio = &#34;blog/post/2022/02/13/sway/&#34;
-qiita = &#34;22f4155f9b724ebac7ca&#34;
-zeen = &#34;command-json-jq&#34;
-author = &#34;syui&#34;
-github = &#34;syui&#34;
-+++
-</code></pre></div><p>外部サービスを利用する場合は、一つのリンクのみ有効となります。例えば、<code>qiita</code>を利用する場合は下記の記述のみとなります。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html:./content/user/syui.md" data-lang="html:./content/user/syui.md">+++
-qiita = &#34;22f4155f9b724ebac7ca&#34;
-author = &#34;syui&#34;
-github = &#34;syui&#34;
-+++
-</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html:./content/user/syui.md" data-lang="html:./content/user/syui.md">+++
-site = &#34;example.com/post/archlinux-first-commit/&#34;
-author = &#34;syui&#34;
-github = &#34;syui&#34;
-+++
-</code></pre></div>
+</code></pre></div><p><a href="https://github.com/ArchLinuxJP/archlinuxjp.github.io/">ArchLinuxJP/archlinuxjp.github.io</a></p>
+
 
 		
 		
@@ -148,7 +67,7 @@ github = &#34;syui&#34;
 </div>
 		
 <script src="/js/highlight-filename.js"></script>
-<footer id="footer">© archlinuxjp</footer>
+<footer id="footer">© Arch Linux JP</footer>
 
 	</body>
 </html>

@@ -13,27 +13,8 @@
       <pubDate>Thu, 02 Jun 2022 00:00:00 +0000</pubDate>
       
       <guid>https://archlinuxjp.github.io/post/2022/06/02/readme/</guid>
-      <description>archlinux関連の記事を集めています。気になる記事があれば追加してみてください。
-記事の追加 以下の形式でpull-reqしてください。blogにlinkが作成されます。
-+++ site = &amp;#34;example.com/post/archlinux-first-commit/index.html&amp;#34; author = &amp;#34;xxx&amp;#34; github = &amp;#34;xxx&amp;#34; +++ 審査のためgithubのusernameは必要となります。
-blogへの執筆 誰でもarchlinuxjpのblogに投稿できます。
-現在、個人のarchlinux環境を紹介する記事の執筆を募集しています。
-募集方法は、こちらのリポジトリをforkして、pull-reqを送ります。投稿はcontent/user/にmarkdownで書きます。
-+++ date = &amp;#34;2016-01-01&amp;#34; tags = [&amp;#34;user&amp;#34;] title = &amp;#34;個人的なarchlinuxのインストールと使い方&amp;#34; author = &amp;#34;syui&amp;#34; github = &amp;#34;syui&amp;#34; +++  authorは執筆者のgithub(username)でお願いします
- 投稿する内容はいたってシンプル、個人環境を自由に紹介するだけです。
-unixpornのようにデスクトップ画像を載せるだけでも構いません。
-概要 使用するディレクトリの紹介です。
-  content/user : コミュニティ参加者のarchlinux環境を紹介
-  content/archive : 共通項目に使える記述を追加(共同執筆)
-  content/post : コミュニティの最新情報などを追加
-  目的と指針 コミュニティに参加する人たちが実際どのように(1)archlinuxをインストールして、(2)archlinuxを使っているのか、その具体例はとても参考になると考えています。
-また、このテーマは、読む側の興味を惹きつけるテーマだと考えます。
-したがって、主にこの2点、個人のarchlinuxのインストールと使い方を念頭に執筆してもらえるとうれしいです。
-このテーマについては、執筆者の個人負担や執筆のハードルを下げる意図も含まれます。
-気軽に投稿してください。
-共通項目と記述の再利用 content/archive/には、archlinuxに関する共通の基礎項目(以下、共通項目)をまとめていく予定です。
-ここで言う共通項目とは、例えば、archlinuxとはなにかの説明だったり、AURの作り方を指します。
-これらは、content/user/に執筆記述されているものの中から使えると判断した記述を抜き出して追加していく予定です。</description>
+      <description>気になる記事があれば以下の形式でpull-reqしてください。
++++ site = &amp;#34;example.com/post/archlinux-first-commit/index.html&amp;#34; author = &amp;#34;name&amp;#34; github = &amp;#34;username&amp;#34; +++ ArchLinuxJP/archlinuxjp.github.io</description>
     </item>
     
   </channel>
